@@ -1,17 +1,16 @@
 import about_us from "../assets/about_us.jpg"
-import asterisks from '../assets/Clip path group (1).svg'
+import asterisks from "../assets/Clip path group (1).svg"
 
 const AboutUs = () => {
-  const points = [
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur. Repudiandae quisquam quae alias, exercitationem quas! Vero voluptate nisi aliquid, perferendis laboriosam vitae fuga totam saepe eos sapiente quam.",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur. Repudiandae quisquam quae alias, exercitationem quas! Vero voluptate nisi aliquid, perferendis laboriosam vitae fuga totam saepe eos sapiente quam.",
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, aspernatur. Repudiandae quisquam quae alias, exercitationem quas! Vero voluptate nisi aliquid, perferendis laboriosam vitae fuga totam saepe eos sapiente quam.",
-  ]
-
   return (
     <div className="min-h-screen px-28 flex justify-center items-center">
       <div className="flex items-center justify-center gap-20">
-        <div className="border mt-10 border-[#7129D6] p-1">
+        <div
+          className="border mt-10 border-[#7129D6] p-1"
+          style={{
+            boxShadow: "0 0 10px 3px #7129D6",
+          }}
+        >
           <img
             className="w-[600px] opacity-80 hover:opacity-100 transition-all duration-200 ease-linear"
             src={about_us}
@@ -19,7 +18,11 @@ const AboutUs = () => {
           />
         </div>
         <div className="w-[600px] items-start gap-10 flex relative flex-col justify-between">
-          <img src={asterisks} alt="" className="absolute -top-[44px] -left-[68px]" />
+          <img
+            src={asterisks}
+            alt=""
+            className="absolute -top-[44px] -left-[68px]"
+          />
           <h1 className="font-bold text-6xl">Our Story</h1>
           <div className="font-light gap-4 text-lg tracking-wide flex flex-col justify-between flex-1">
             <p>
