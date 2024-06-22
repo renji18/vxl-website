@@ -5,23 +5,10 @@ import aadarsh from "../assets/aadarsh.jpeg"
 import mittal from "../assets/mittal.jpeg"
 import divyapal from "../assets/divyapal.jpeg"
 import kartik from "../assets/kartik.jpeg"
-import aadarsh_black from "../assets/aadarsh-black.jpeg"
-import mittal_black from "../assets/mittal-black.jpeg"
-import divyapal_black from "../assets/divyapal-black.jpeg"
-import kartik_black from "../assets/kartik-black.jpeg"
-import asterisks from '../assets/Clip path group (1).svg'
-import { useState } from "react"
+import asterisks from "../assets/Clip path group (1).svg"
 
 function WhyUs() {
   const slideImg = [kartik, divyapal, mittal, aadarsh]
-  // const slideImgDark = [
-  //   kartik_black,
-  //   divyapal_black,
-  //   mittal_black,
-  //   aadarsh_black,
-  // ]
-
-  const [hovering, setHovering] = useState(false)
 
   const settings = {
     dots: false,
@@ -40,7 +27,11 @@ function WhyUs() {
     <div className="min-h-screen px-28 flex items-center justify-center">
       <div className="flex items-center justify-center gap-24">
         <div className="w-[600px] items-start gap-12 h-[500px] flex flex-col relative justify-between">
-        <img src={asterisks} alt="" className="absolute -top-[60px] right-[280px] rotate-[110deg]" />
+          <img
+            src={asterisks}
+            alt=""
+            className="absolute -top-[60px] right-[280px] rotate-[110deg]"
+          />
           <h1 className="font-bold text-6xl">Why Us?</h1>
           <div className="font-light text-lg tracking-wide flex flex-col justify-between flex-1">
             <p>
@@ -63,11 +54,7 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div
-          className="h-[500px] relative w-[500px]"
-          onMouseEnter={() => setHovering(true)}
-          onMouseLeave={() => setHovering(false)}
-        >
+        <div className="h-[500px] relative w-[500px]">
           <Slider {...settings}>
             {slideImg?.map((si, indx) => (
               <div key={indx}>
