@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
+import dashX from "../assets/dashx.svg"
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -30,10 +31,11 @@ const NavBar = () => {
         isScrolled ? "blur-backdrop-filter" : ""
       }`}
     >
-      <p className="text-[20px] font-mulish tracking-widest font-[700]">
+      <p className="text-[20px] font-mulish relative tracking-widest font-[700]">
         vault<span className="text-[35px]">X</span>ledger
+        <img src={dashX} className="absolute left-20 bottom-0" alt="" />
       </p>
-      <button className="border-4 border-[#3f005b] text-black hover:text-white hover:bg-[#5f3174] font-[700] transition-all duration-300 ease-linear bg-white px-[20px] py-[7px] text-[13px] leading-[25.1px] rounded-[10px]">
+      <button className="border-4 border-[#7129D6] text-black hover:text-white hover:bg-[#7129D6] font-[700] transition-all duration-300 ease-linear bg-white px-[20px] py-[7px] text-[13px] leading-[25.1px] rounded-[10px]">
         Request Demo
       </button>
     </div>

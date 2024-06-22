@@ -10,6 +10,7 @@ body {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  cursor: none;
 }
 
 /* Hide the default scrollbar */
@@ -19,15 +20,10 @@ body {
 }
 
 .blur-backdrop-filter {
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .slick-arrow {
   display: none !important;
-}
-
-.edged-corner {
-  -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 25%, 75% 0);
-  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 15%, 85% 0);
 }

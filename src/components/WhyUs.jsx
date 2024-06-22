@@ -9,16 +9,17 @@ import aadarsh_black from "../assets/aadarsh-black.jpeg"
 import mittal_black from "../assets/mittal-black.jpeg"
 import divyapal_black from "../assets/divyapal-black.jpeg"
 import kartik_black from "../assets/kartik-black.jpeg"
+import asterisks from '../assets/Clip path group (1).svg'
 import { useState } from "react"
 
 function WhyUs() {
   const slideImg = [kartik, divyapal, mittal, aadarsh]
-  const slideImgDark = [
-    kartik_black,
-    divyapal_black,
-    mittal_black,
-    aadarsh_black,
-  ]
+  // const slideImgDark = [
+  //   kartik_black,
+  //   divyapal_black,
+  //   mittal_black,
+  //   aadarsh_black,
+  // ]
 
   const [hovering, setHovering] = useState(false)
 
@@ -38,7 +39,8 @@ function WhyUs() {
   return (
     <div className="min-h-screen px-28 flex items-center justify-center">
       <div className="flex items-center justify-center gap-24">
-        <div className="w-[600px] items-start gap-12 h-[500px] flex flex-col justify-between">
+        <div className="w-[600px] items-start gap-12 h-[500px] flex flex-col relative justify-between">
+        <img src={asterisks} alt="" className="absolute -top-[60px] right-[280px] rotate-[110deg]" />
           <h1 className="font-bold text-6xl">Why Us?</h1>
           <div className="font-light text-lg tracking-wide flex flex-col justify-between flex-1">
             <p>
@@ -72,22 +74,8 @@ function WhyUs() {
                 <img
                   src={si}
                   alt={indx}
-                  className={`rounded opacity-80 object-cover h-[500px] w-[500px] `}
+                  className={`rounded opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover h-[500px] w-[500px] `}
                 />
-                {/* <img
-                  src={si}
-                  alt={indx}
-                  className={`absolute inset-0 rounded object-cover h-[500px] w-[500px] transition-opacity duration-500 ease-in-out ${
-                    hovering ? "opacity-0" : "opacity-100"
-                  }`}
-                />
-                <img
-                  src={slideImg[indx]}
-                  alt={indx}
-                  className={`h-[500px] rounded w-[500px] object-cover ease-in-out transition-opacity duration-500 ${
-                    hovering ? "opacity-100" : "opacity-0"
-                  }`}
-                /> */}
               </div>
             ))}
           </Slider>

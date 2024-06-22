@@ -7,10 +7,12 @@ import Services from "./components/Services"
 import Contact from "./components/Contact"
 import Team from "./components/Team"
 import Footer from "./components/Footer"
+import CustomCursor from "./components/Cursor"
 
 const App = () => {
   return (
     <div>
+      <CustomCursor />
       <NavBar />
       <Home />
       <AboutUs />
