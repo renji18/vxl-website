@@ -9,7 +9,7 @@ const NavBar = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY
       const screenHeight = window.innerHeight
-      const threshold = screenHeight * 0.3
+      const threshold = screenHeight * 0.2
 
       if (scrollPosition > threshold) {
         setIsScrolled(true)
@@ -29,7 +29,9 @@ const NavBar = () => {
     <div
       className={`flex rounded-full fixed top-5 left-5 right-5 justify-between items-center z-[5054] pt-[15px] pb-[10px] px-[2rem] transition-all duration-300 ease-linear ${
         isScrolled ? "blur-backdrop-filter" : ""
-      }`}
+      }`}  style={{
+            boxShadow: isScrolled && "0 0 20px -12px #ffffffb3",
+          }}
     >
       <p className="text-[20px] font-mulish relative tracking-widest font-[700]">
         vault<span className="text-[35px]">X</span>ledger

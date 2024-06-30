@@ -6,13 +6,13 @@ const AboutUs = () => {
     <div className="min-h-screen px-28 flex justify-center items-center">
       <div className="flex items-center justify-center gap-20">
         <div
-          className="border mt-10 border-[#7129D6] p-1"
+          className="border rounded-md mt-10 border-[#7129D6] p-1"
           style={{
-            boxShadow: "0 0 10px 3px #7129D6",
+            boxShadow: "0 0 8px 1px #7129D6",
           }}
         >
           <img
-            className="w-[600px] opacity-80 hover:opacity-100 transition-all duration-200 ease-linear"
+            className="w-[600px] rounded opacity-80 hover:opacity-100 transition-all duration-200 ease-linear"
             src={about_us}
             alt="cube"
           />

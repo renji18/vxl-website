@@ -14,7 +14,7 @@ function WhyUs() {
     dots: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    pauseOnHover: true,
+    pauseOnHover: false,
     fade: true,
     infinite: true,
     speed: 1000,

@@ -9,6 +9,8 @@ import Team from "./components/Team"
 import Footer from "./components/Footer"
 import CustomCursor from "./components/Cursor"
 
+
+
 const App = () => {
   return (
     <div>
