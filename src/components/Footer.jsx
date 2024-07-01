@@ -1,17 +1,17 @@
 import React from "react"
-import mail from "../assets/mail.svg fill.svg"
-import linkedin from "../assets/linkedin.svg"
-import twitter from "../assets/twitter.svg"
-import dashX from "../assets/dashx.svg"
-import insta from "../assets/instagram.svg"
+// import mail from "../assets/mail.svg fill.svg"
+// import linkedin from "../assets/linkedin.svg"
+// import twitter from "../assets/twitter.svg"
+// import dashX from "../assets/dashx.svg"
+// import insta from "../assets/instagram.svg"
 import { FaInstagram, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa"
 
 const Footer = () => {
-  const links = [
-    { title: "LinkedIn", link: "https://www.linkedin.com/", image: linkedin },
-    { title: "Twitter", link: "https://www.twitter.com/", image: twitter },
-    { title: "Instagram", link: "https://www.youtube.com/", image: insta },
-  ]
+  // const links = [
+  //   { title: "LinkedIn", link: "https://www.linkedin.com/", image: linkedin },
+  //   { title: "Twitter", link: "https://www.twitter.com/", image: twitter },
+  //   { title: "Instagram", link: "https://www.youtube.com/", image: insta },
+  // ]
   return (
     // <div className="px-20 pt-24">
     //   <div className="bg-[#ffffff97] h-[0.2px] w-full mb-10 "></div>

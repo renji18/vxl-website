@@ -54,14 +54,14 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="h-[500px] relative w-[500px]">
+        <div className="h-[450px] relative w-[450px]">
           <Slider {...settings}>
             {slideImg?.map((si, indx) => (
               <div key={indx}>
                 <img
                   src={si}
                   alt={indx}
-                  className={`rounded opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover h-[500px] w-[500px] `}
+                  className={`rounded opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover h-[450px] w-[450px] `}
                 />
               </div>
             ))}

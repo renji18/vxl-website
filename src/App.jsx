@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import NavBar from "./components/Navbar"
 import Home from "./components/Home"
 import WhyUs from "./components/WhyUs"
@@ -12,15 +12,18 @@ import CustomCursor from "./components/Cursor"
 
 
 const App = () => {
+
+  const [contactPop, setContactPop] = useState(false)
+
   return (
     <div>
       <CustomCursor />
-      <NavBar />
+      <NavBar setContactPop={setContactPop} />
       <Home />
       <AboutUs />
       <WhyUs />
       <Services />
-      <Contact />
+      <Contact contactPop={contactPop} setContactPop={setContactPop}/>
       <Team />
       <Footer />
     </div>
