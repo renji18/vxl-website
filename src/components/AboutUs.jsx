@@ -1,5 +1,5 @@
 import about_us from "../assets/about_us.jpg"
-import asterisks from "../assets/Clip path group (1).svg"
+import asterisks from "../assets/asterisk.svg"
 
 const AboutUs = () => {
   return (

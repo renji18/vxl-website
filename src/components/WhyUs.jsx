@@ -1,11 +1,11 @@
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import aadarsh from "../assets/aadarsh.jpeg"
-import mittal from "../assets/mittal.jpeg"
-import divyapal from "../assets/divyapal.jpeg"
-import kartik from "../assets/kartik.jpeg"
-import asterisks from "../assets/Clip path group (1).svg"
+import aadarsh from "../assets/whyus/aadarsh.jpeg"
+import mittal from "../assets/whyus/mittal.jpeg"
+import divyapal from "../assets/whyus/divyapal.jpeg"
+import kartik from "../assets/whyus/kartik.jpeg"
+import asterisks from "../assets/asterisk.svg"
 
 function WhyUs() {
   const slideImg = [kartik, divyapal, mittal, aadarsh]
