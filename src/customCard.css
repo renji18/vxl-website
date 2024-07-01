@@ -120,7 +120,7 @@
   bottom: 8px;
   /* bottom: 5px;  */ /* With Portfolio Button */
   width: 100%;
-  padding: 0 10px;
+  padding: 0 0 0 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -9,7 +9,7 @@ import anas from "../assets/teams/anas.jpeg"
 const Team = () => {
   const data = [
     {
-      name: "Kartik",
+      name: "Kartik Joshi",
       position: "FOUNDER",
       profile: kartik,
       socials: { github: "", linkedIn: "" },
@@ -18,7 +18,7 @@ const Team = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
-      name: "Divyapal",
+      name: "Divyapalsinh Chauhan",
       position: "C0-FOUNDER",
       profile: divyapal,
       socials: { github: "", linkedIn: "" },
@@ -46,7 +46,7 @@ const Team = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
-      name: "Manan",
+      name: "Manan Panchal",
       position: "LEAD",
       profile:
         "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
@@ -56,7 +56,7 @@ const Team = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
-      name: "Anas",
+      name: "MohmedAnas Gandiwala",
       position: "LEAD",
       profile: anas,
       socials: { github: "", linkedIn: "" },
@@ -65,7 +65,7 @@ const Team = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
-      name: "Susmit",
+      name: "Susmit Kulkarni",
       position: "DIRECTOR",
       profile:
         "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
@@ -90,7 +90,7 @@ const Team = () => {
       <div className="flex flex-col mx-20 mb-[77px]">
         <p className="font-bold text-6xl text-center">Team</p>
       </div>
-      <div className="flex flex-wrap justify-center gap-5 lg:gap-x-7">
+      <div className="flex flex-wrap justify-evenly gap-y-5 lg:gap-y-10 mx-20">
         {data?.map((row) => (
           <TeamCard key={row?.name} data={row} />
         ))}

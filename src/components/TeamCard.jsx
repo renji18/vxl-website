@@ -5,10 +5,10 @@ import { useState } from "react"
 import "../customCard.css"
 import { FaGithub } from "react-icons/fa6"
 import { FaLinkedin } from "react-icons/fa6"
-import { GrWaypoint } from "react-icons/gr"
+import { IoNavigate } from "react-icons/io5"
 
 const TeamCard = ({ data }) => {
-  const [hovering, isHovering] = useState(false)
+  //   const [hovering, isHovering] = useState(false)
 
   const socials = [
     {
@@ -25,8 +25,8 @@ const TeamCard = ({ data }) => {
 
   return (
     <div
-      onMouseEnter={() => isHovering(true)}
-      onMouseLeave={() => isHovering(false)}
+      // onMouseEnter={() => isHovering(true)}
+      // onMouseLeave={() => isHovering(false)}
       className="flex cursor-pointer items-center justify-center"
     >
       <div className="card">
@@ -61,7 +61,7 @@ const TeamCard = ({ data }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <GrWaypoint size={17} />
+                  <IoNavigate size={19} />
                 </a>
               )}
             </div>

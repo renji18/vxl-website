@@ -27,12 +27,12 @@ const NavBar = ({ setContactPop }) => {
 
   return (
     <div
-      className={`flex rounded-full sticky top-5 left-5 right-5 justify-between items-center z-[5054] py-[15px] px-[2rem] transition-all duration-300 ease-linear ${
+      className={`flex sticky top-0 left-0 right-0 justify-between items-center z-[5054] py-[15px] px-[2rem] transition-all duration-300 ease-linear ${
         isScrolled ? "blur-backdrop-filter" : ""
       }`}
-      // style={{
-      //   boxShadow: isScrolled && "0 0 20px -12px #ffffffb3",
-      // }}
+      style={{
+        boxShadow: isScrolled && "0 0 20px -12px #ffffffb3",
+      }}
     >
       <p className="text-[20px] font-mulish relative tracking-widest -translate-y-1 font-[700]">
         vault<span className="text-[35px]">X</span>ledger
