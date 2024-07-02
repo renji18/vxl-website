@@ -90,7 +90,7 @@ const Team = () => {
       <div className="flex flex-col mx-20 mb-[77px]">
         <p className="font-bold text-6xl text-center">Team</p>
       </div>
-      <div className="flex flex-wrap justify-evenly gap-y-5 lg:gap-y-10 mx-20">
+      <div className="flex flex-wrap justify-evenly gap-y-5 lg:gap-y-10 lg:mx-3 xl:mx-20">
         {data?.map((row) => (
           <TeamCard key={row?.name} data={row} />
         ))}

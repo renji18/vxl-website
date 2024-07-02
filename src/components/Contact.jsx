@@ -21,14 +21,14 @@ const Contact = ({ contactPop, setContactPop }) => {
         onClick={() => setContactPop(false)}
       />
       <div
-        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex items-center justify-center p-24 rounded-xl`}
+        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex items-center justify-center lg:p-14 xl:p-24 rounded-xl`}
         // style={{
         //   boxShadow: "0 5px 20px -5px #7129D6",
         // }}
       >
-        <div className="flex flex-col justify-center items-center gap-[20px]">
-          <div className="flex bg-black border-[#7129D6] border-2  items-center gap-3 rounded-[5px] px-[17px] ">
-            <img src={user} alt="" />
+        <div className="flex flex-col justify-center items-center lg:gap-[15px] xl:gap-[20px]">
+          <div className="flex bg-black border-[#7129D6] border-2  items-center lg:gap-2 xl:gap-3 rounded-[5px] px-[17px] ">
+            <img src={user} alt="" className="lg:h-[18px] xl:h-[24px]" />
             <input
               type="text"
               placeholder="Name"
@@ -36,12 +36,12 @@ const Contact = ({ contactPop, setContactPop }) => {
               value={input.name}
               onChange={handleInput}
               autoComplete="off"
-              className="bg-black tracking-wider py-[11px] w-[400px] outline-none"
+              className="bg-black tracking-wider lg:text-sm xl:text-base lg:py-[7px] xl:py-[11px] lg:w-[350px] xl:w-[400px] outline-none"
             />
           </div>
 
-          <div className="flex bg-black border-[#7129D6] border-2 items-center gap-3 rounded-[5px] px-[17px]">
-            <img src={mail} alt="" className="h-[20px]" />
+          <div className="flex bg-black border-[#7129D6] border-2 items-center lg:gap-2 xl:gap-3 rounded-[5px] px-[17px]">
+            <img src={mail} alt="" className="lg:h-[15px] xl:h-[20px]" />
             <input
               type="email"
               placeholder="Email"
@@ -49,24 +49,24 @@ const Contact = ({ contactPop, setContactPop }) => {
               value={input.email}
               onChange={handleInput}
               autoComplete="off"
-              className="bg-black tracking-wider py-[11px] w-[400px] outline-none"
+              className="bg-black tracking-wider lg:text-sm xl:text-base lg:py-[7px] xl:py-[11px] lg:w-[350px] xl:w-[400px] outline-none"
             />
           </div>
-          <div className="flex bg-black border-[#7129D6] border-2 items-start gap-3 py-[11px] rounded-[5px] px-[17px]">
-            <img src={message} alt="" />
+          <div className="flex bg-black border-[#7129D6] border-2 items-start lg:gap-2 xl:gap-3 py-[11px] rounded-[5px] px-[17px]">
+            <img src={message} alt="" className="lg:h-[19px] xl:h-[24px]" />
             <textarea
               placeholder="Message"
               id="message"
               value={input.message}
               onChange={handleInput}
               rows={4}
-              className=" bg-black tracking-wider w-[400px] -mt-0.5 outline-none"
+              className=" bg-black tracking-wider lg:text-sm xl:text-base lg:w-[350px] xl:w-[400px] -mt-0.5 outline-none"
             />
           </div>
 
           <button
             onClick={console.log(input)}
-            className=" rounded-[8px] py-[8px] px-[45px] font-medium text-white bg-gradient-to-br from-[#7129D6] to-[#412565] "
+            className=" rounded-[8px] lg:py-[6px] lg:px-[40px] xl:py-[8px] xl:px-[45px] font-medium text-white bg-gradient-to-br from-[#7129D6] to-[#412565] "
           >
             Send
           </button>

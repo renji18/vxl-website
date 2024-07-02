@@ -3,8 +3,8 @@ import home_video from "../assets/hero_section_video.mp4"
 
 function Home() {
   return (
-    <div className="flex relative h-screen justify-between pl-[15rem] xl:pl-[20rem] items-center">
-      <p className="font-[700] absolute left-20 max-w-[60%] xl:max-w-[37%] text-[50px] leading-[60px] tracking-widest z-10">
+    <div className="flex relative h-screen justify-between lg:pl-[15rem] xl:pl-[20rem] items-center">
+      <p className="font-[700] absolute lg:left-14 xl:left-20 lg:max-w-[50%] xl:max-w-[45%] lg:text-[42px] xl:text-[50px] lg:leading-[50px] xl:leading-[60px] tracking-widest z-10">
         <Typewriter
           words={["Unlocking Your Digital Fort Knox"]}
           loop={1}
