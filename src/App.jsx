@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div>
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       <NavBar setContactPop={setContactPop} />
       <Home />
       <AboutUs />
