@@ -32,15 +32,15 @@ const CustomCursor = () => {
     <>
       <div
         ref={cursorRef}
-        className="rounded-full z-[10000] pointer-events-none w-[30px] h-[30px] border-[2px] border-white fixed top-0 left-0"
+        className="rounded-full z-[10000] pointer-events-none w-[40px] h-[40px] border-[2px] border-white fixed top-0 left-0"
         style={{
           transform: "translate(-50%,-50%)",
-          boxShadow: "0 0 10px 5px #7129D6",
+          boxShadow: "0 0 30px -5px #ffffff",
         }}
       ></div>
       <div
         ref={innerCursorRef}
-        className="rounded-full z-[10000] pointer-events-none fixed bg-[#7129D6] h-[5px] w-[5px] top-0 left-0"
+        className="rounded-full z-[10000] pointer-events-none fixed bg-[#7129D6] h-[6px] w-[6px] top-0 left-0"
         style={{ transform: "translate(-50%,-50%)" }}
       ></div>
     </>

@@ -8,7 +8,7 @@ import { FaLinkedin } from "react-icons/fa6"
 import { IoNavigate } from "react-icons/io5"
 
 const TeamCard = ({ data }) => {
-  //   const [hovering, isHovering] = useState(false)
+  const [hovering, isHovering] = useState(false)
 
   const socials = [
     {
@@ -25,12 +25,14 @@ const TeamCard = ({ data }) => {
 
   return (
     <div
-      // onMouseEnter={() => isHovering(true)}
-      // onMouseLeave={() => isHovering(false)}
-      className="flex cursor-pointer items-center justify-center"
+      onMouseEnter={() => isHovering(true)}
+      onMouseLeave={() => isHovering(false)}
+      className="flex  cursor-pointer items-center justify-center"
     >
       <div className="card">
-        <div className="profile-pic">
+        <div className="relative profile-pic">
+          <div className={`${hovering ? "" : "bg-black/25"} absolute top-0 left-0 right-0 bottom-0 z-10`} />
+
           <img src={data?.profile} alt="Profile" />
         </div>
 

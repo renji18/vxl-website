@@ -6,6 +6,7 @@ import kartik from "../assets/teams/kartik.jpg"
 import divyapal from "../assets/teams/divyapal.jpeg"
 import anas from "../assets/teams/anas.jpg"
 import darshil from "../assets/teams/darshil.jpg"
+import manan from "../assets/teams/manan.jpg"
 
 const Team = () => {
   const data = [
@@ -48,8 +49,7 @@ const Team = () => {
     {
       name: "Manan Panchal",
       position: "LEAD",
-      profile:
-        "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
+      profile: manan,
       socials: { github: "", linkedIn: "" },
       portfolio: "",
       about:
