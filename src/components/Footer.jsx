@@ -1,4 +1,6 @@
 import React from "react"
+import dashX from "../assets/dashx.svg"
+
 // import mail from "../assets/mail.svg fill.svg"
 // import linkedin from "../assets/linkedin.svg"
 // import twitter from "../assets/twitter.svg"
@@ -22,7 +24,7 @@ const Footer = () => {
     //         vault<span className="text-[60px]">X</span>ledger
     //         <img src={dashX} className="absolute left-48 scale-[2] bottom-1" alt="" />
     //       </p>
-          
+
     //     </div>
     //     <div className="flex justify-center items-center gap-36 text-lg ">
     //       <div className="flex flex-col">
@@ -58,36 +60,37 @@ const Footer = () => {
     //     &copy; vaultXledger 2023
     //   </p>
     // </div>
-    <div className="bg-[#050505] font-karla text-white lg:px-[28px] xl:px-[32px]">
-        <div
-          style={{ borderBottom: "1px solid #535353" }}
-          className="flex items-center justify-between lg:py-[16px] xl:py-[20px]"
-        >
-          <p className="lg:text-[20px] xl:text-[22px] 2xl:text-[24px] font-[400]">
-            &copy; 2023 VAULT X LEDGER
-          </p>
-          <div className="flex items-center lg:gap-[20px] xl:gap-[23px]">
-            <div>
-              <FaInstagram size={23} />
-            </div>
-            <div>
-              <FaFacebookF size={16} />
-            </div>
-            <div>
-              <FaTwitter size={20} />
-            </div>
-            <div>
-              <FaYoutube size={22} />
-            </div>
+    <div className=" font-karla text-white lg:px-[28px] xl:px-[32px]">
+      <div
+        style={{ borderBottom: "1px solid #535353" }}
+        className="flex items-center justify-between lg:py-[16px] xl:py-[20px]"
+      >
+        <p className="text-[20px] font-mulish relative tracking-widest -translate-y-1 font-[700]">
+          &copy; 2023 vault<span className="text-[35px]">X</span>ledger
+          <img src={dashX} className="absolute left-[170px] bottom-0" alt="" />
+        </p>
+        <div className="flex items-center lg:gap-[20px] xl:gap-[23px]">
+          <div>
+            <FaInstagram size={23} />
+          </div>
+          <div>
+            <FaFacebookF size={16} />
+          </div>
+          <div>
+            <FaTwitter size={20} />
+          </div>
+          <div>
+            <FaYoutube size={22} />
           </div>
         </div>
-        <div className="lg:py-[18px] lg:gap-[20px] xl:py-[24px] flex items-center xl:gap-[25px] text-[#d9d9d9] font-[400] lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Privacy Policy</li>
-          <li>Terms & Conditions</li>
-        </div>
       </div>
+      <div className="lg:py-[18px] lg:gap-[20px] xl:py-[24px] flex items-center xl:gap-[25px] text-[#FFFFFF] font-[400] lg:text-[12px] xl:text-[14px] 2xl:text-[16px]">
+        <li>About Us</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+        <li>Terms & Conditions</li>
+      </div>
+    </div>
   )
 }
 

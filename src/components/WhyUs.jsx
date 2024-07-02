@@ -47,7 +47,7 @@ function WhyUs() {
               delivering reliable and high-quality service.
             </p>
             <p>
-              With us, you&apos;re not just getting technical proficiency;
+              With us, you&apos;re not just getting technical proficiency,
               you&apos;re gaining a partner who values innovation, trust, and
               your project&apos;s success. Let us help you achieve your goals
               with cutting-edge solutions tailored to your unique requirements.

@@ -24,26 +24,24 @@ const AboutUs = () => {
             className="absolute lg:scale-90 xl:scale-100 lg:-top-[41px] lg:-left-[63px] xl:-top-[44px] xl:-left-[68px]"
           />
           <h1 className="font-bold lg:text-5xl xl:text-6xl">Our Story</h1>
-          <div className="font-light lg:gap-3 xl:gap-4 lg:text-sm xl:text-lg 2xl:text-xl tracking-wide flex flex-col justify-between flex-1">
+          <div className="font-light lg:gap-4 xl:gap-5 lg:text-base xl:text-lg 2xl:text-xl tracking-wide flex flex-col justify-between flex-1">
             <p>
-              Our journey began with a spark of innovation at the Vadodara
-              Police Hackathon, hosted by PIERC, Parul University. Our project
+              Our journey began with a spark of innovation at Vadodara Police
+              Hackathon, hosted by PIERC, Parul University. Our project
               impressed the Police Department, earning us an incubation letter
               from IGP Sandeep Singh IPS Sir and the opportunity to launch our
-              SaaS startup.
+              startup.
             </p>
             <p>
-              We were soon entrusted with "Project SecureScan", based on a
-              problem statement provided by IPS Rohan Anand Sir at the Vadodara
-              Rural Police Department and mentored by Prob. IPS Jayvir Gadhvi
-              Sir.
+              We were entrusted with "Project SecureScan", based on a problem
+              statement provided by IPS Rohan Anand Sir at the Vadodara Police
+              Department and mentored by Prob. IPS Jayvir Gadhvi Sir.
             </p>
             <p>
               Our story is one of seizing opportunities and overcoming
-              challenges, blending creativity with technical prowess, and fueled
-              by the encouragement and support of visionary partners. From our
+              challenges, blending creativity with technical prowess. From our
               hackathon triumph to our ongoing endeavors, we forge a path of
-              success, committed to making a real difference.
+              success, committed to making a difference.
             </p>
           </div>
         </div>

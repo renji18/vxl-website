@@ -47,6 +47,15 @@ const Team = () => {
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
+      name: "MohmedAnas Gandiwala",
+      position: "LEAD",
+      profile: anas,
+      socials: { github: "", linkedIn: "" },
+      portfolio: "",
+      about:
+        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+    },
+    {
       name: "Manan Panchal",
       position: "LEAD",
       profile: manan,
@@ -55,10 +64,11 @@ const Team = () => {
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
+  
     {
-      name: "MohmedAnas Gandiwala",
-      position: "LEAD",
-      profile: anas,
+      name: "Mittal Suthar",
+      position: "DIRECTOR",
+      profile: mittal,
       socials: { github: "", linkedIn: "" },
       portfolio: "",
       about:
@@ -74,20 +84,12 @@ const Team = () => {
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
-    {
-      name: "Mittal Suthar",
-      position: "DIRECTOR",
-      profile: mittal,
-      socials: { github: "", linkedIn: "" },
-      portfolio: "",
-      about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
-    },
+    
   ]
 
   return (
-    <section className="sticky min-h-screen pt-16 pb-[120px]">
-      <div className="flex flex-col mx-20 mb-[77px]">
+    <section className="sticky min-h-screen mt-20 pt-16 mb-[150px]">
+      <div className="flex flex-col mx-20 lg:mb-[57px] xl:mb-[77px]">
         <p className="font-bold text-6xl text-center">Team</p>
       </div>
       <div className="flex flex-wrap justify-evenly gap-y-5 lg:gap-y-10 lg:mx-3 xl:mx-20">

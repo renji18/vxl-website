@@ -21,7 +21,7 @@ const Contact = ({ contactPop, setContactPop }) => {
         onClick={() => setContactPop(false)}
       />
       <div
-        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex items-center justify-center lg:p-14 xl:p-24 rounded-xl`}
+        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex lg:scale-95 items-center justify-center lg:p-14 xl:p-20 rounded-xl`}
         // style={{
         //   boxShadow: "0 5px 20px -5px #7129D6",
         // }}
