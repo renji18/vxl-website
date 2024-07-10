@@ -9,10 +9,7 @@ import Team from "./components/Team"
 import Footer from "./components/Footer"
 import CustomCursor from "./components/Cursor"
 
-
-
 const App = () => {
-
   const [contactPop, setContactPop] = useState(false)
 
   return (
@@ -22,10 +19,10 @@ const App = () => {
       <Home />
       <AboutUs />
       <WhyUs />
-      <Services />
-      <Contact contactPop={contactPop} setContactPop={setContactPop}/>
-      <Team />
-      <Footer />
+      {/* <Services /> */}
+      {/* <Contact contactPop={contactPop} setContactPop={setContactPop} /> */}
+      {/* <Team /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

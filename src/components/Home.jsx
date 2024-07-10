@@ -25,8 +25,8 @@ function Home() {
     }
   }, [])
   return (
-    <div className="flex relative h-screen justify-between lg:pl-[12rem] items-center">
-      <p className="font-[700] absolute lg:left-14 xl:left-20 lg:max-w-[50%] xl:max-w-[40%] lg:text-[42px] xl:text-[55px] lg:leading-[50px] xl:leading-[60px] tracking-wider z-10">
+    <div className="flex relative h-screen justify-between sm:pl-[8rem] md:pl-[9.5rem] lg:pl-[12rem] items-center">
+      <p className="font-[700] absolute left-10 xl:left-20 sm:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] text-[32px] sm:text-[40px] xl:text-[55px] leading-tight sm:leading-[50px] xl:leading-[60px] tracking-wider z-10">
         <Typewriter
           words={["Unlocking Your Digital Fort Knox"]}
           loop={1}
