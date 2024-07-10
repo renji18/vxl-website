@@ -39,13 +39,13 @@ function Home() {
       </p>
 
       <video
-        controls={false}
-        muted={true}
-        autoPlay={true}
+        muted
+        autoPlay
+        loop
+        playsInline
         className={`${
           isScrolled ? "opacity-[0.2]" : "opacity-[0.5]"
         } opacity-[0.2] z-[-5] fixed scale-[0.8] transition-all duration-300 ease-linear`}
-        loop={true}
       >
         <source src={home_video} />
       </video>
