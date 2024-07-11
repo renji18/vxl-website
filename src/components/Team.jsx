@@ -14,7 +14,10 @@ const Team = () => {
       name: "Kartik Joshi",
       position: "FOUNDER",
       profile: kartik,
-      socials: { github: "", linkedIn: "" },
+      socials: {
+        linkedIn: "https://www.linkedin.com/in/kartikjoshi23",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -23,16 +26,16 @@ const Team = () => {
       name: "Divyapalsinh Chauhan",
       position: "C0-FOUNDER",
       profile: divyapal,
-      socials: { github: "", linkedIn: "" },
+      socials: { linkedIn: "", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
     {
-      name: "Darshil",
+      name: "Darshil Mistry",
       position: "DIRECTOR",
       profile: darshil,
-      socials: { github: "", linkedIn: "" },
+      socials: { linkedIn: "", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -41,7 +44,10 @@ const Team = () => {
       name: "Aadarsh Jha",
       position: "DIRECTOR",
       profile: aadarsh,
-      socials: { github: "", linkedIn: "" },
+      socials: {
+        linkedIn: "https://www.linkedin.com/in/aadarshJha1401/",
+        github: "",
+      },
       portfolio: "https://aadarsh-jha-portfolio.netlify.app/",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -50,7 +56,7 @@ const Team = () => {
       name: "MohmedAnas Gandiwala",
       position: "LEAD",
       profile: anas,
-      socials: { github: "", linkedIn: "" },
+      socials: { linkedIn: "", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -59,7 +65,7 @@ const Team = () => {
       name: "Manan Panchal",
       position: "LEAD",
       profile: manan,
-      socials: { github: "", linkedIn: "" },
+      socials: { linkedIn: "", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -68,7 +74,10 @@ const Team = () => {
       name: "Mittal Suthar",
       position: "DIRECTOR",
       profile: mittal,
-      socials: { github: "", linkedIn: "" },
+      socials: {
+        linkedIn: "https://www.linkedin.com/in/mittal-suthar/",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -78,12 +87,11 @@ const Team = () => {
       position: "DIRECTOR",
       profile:
         "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
-      socials: { github: "", linkedIn: "" },
+      socials: { linkedIn: "", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
     },
-    
   ]
 
   return (

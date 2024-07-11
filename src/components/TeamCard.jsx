@@ -12,15 +12,15 @@ const TeamCard = ({ data }) => {
 
   const socials = [
     {
-      href: data?.socials?.github,
-      className: "hover:text-zinc-700",
-      element: <FaGithub size={19} />,
-    },
-    {
       href: data?.socials?.linkedIn,
       className: "hover:text-cyan-700",
       element: <FaLinkedin size={19} />,
     },
+    // {
+    //   href: data?.socials?.github,
+    //   className: "hover:text-zinc-700",
+    //   element: <FaGithub size={19} />,
+    // },
   ]
 
   return (
@@ -31,7 +31,11 @@ const TeamCard = ({ data }) => {
     >
       <div className="card">
         <div className="relative profile-pic">
-          <div className={`${hovering ? "" : "bg-black/25"} absolute top-0 left-0 right-0 bottom-0 z-10`} />
+          <div
+            className={`${
+              hovering ? "" : "bg-black/25"
+            } absolute top-0 left-0 right-0 bottom-0 z-10`}
+          />
 
           <img src={data?.profile} alt="Profile" />
         </div>
@@ -56,7 +60,7 @@ const TeamCard = ({ data }) => {
                   {s?.element}
                 </a>
               ))}
-              {data?.portfolio && data?.portfolio !== "" && (
+              {/* {data?.portfolio && data?.portfolio !== "" && (
                 <a
                   className="hover:text-rose-700"
                   href={data?.portfolio}
@@ -65,7 +69,7 @@ const TeamCard = ({ data }) => {
                 >
                   <IoNavigate size={19} />
                 </a>
-              )}
+              )} */}
             </div>
             <div className="text-[13.2px] lg:text-[14.5px] tracking-wider link text font-semibold py-2 px-3">
               {data?.name}
