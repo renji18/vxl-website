@@ -43,7 +43,7 @@ function Home() {
         autoPlay
         loop
         playsInline
-        controls={false}
+        controls={true}
         className={`${
           isScrolled ? "opacity-[0.2]" : "opacity-[0.5]"
         } opacity-[0.2] z-[-5] fixed scale-[0.8] transition-all duration-300 ease-linear`}
