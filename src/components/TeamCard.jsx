@@ -67,7 +67,7 @@ const TeamCard = ({ data }) => {
                 </a>
               )}
             </div>
-            <div className="text-[14.5px] tracking-wider link text font-semibold py-2 px-3">
+            <div className="text-[12px] lg:text-[14.5px] tracking-wider link text font-semibold py-2 px-3">
               {data?.name}
             </div>
 

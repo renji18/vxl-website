@@ -37,7 +37,7 @@ function WhyUs() {
           Why Us?
         </h1>
       </div>
-      <div className="flex px-10 sm:px-20 md:px-28 lg:px-0 flex-col-reverse lg:flex-row items-center justify-center gap-6 lg:gap-12 xl:gap-24">
+      <div className="flex px-9 sm:px-20 md:px-28 lg:px-0 flex-col-reverse lg:flex-row items-center justify-center gap-6 lg:gap-12 xl:gap-24">
         <div className="lg:w-[500px] lg:h-[420px] xl:w-[600px] items-start gap-12 xl:h-[500px] flex flex-col relative justify-between">
           <img
             src={asterisks}

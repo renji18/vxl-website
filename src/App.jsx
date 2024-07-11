@@ -21,7 +21,7 @@ const App = () => {
       <WhyUs />
       {/* <Services /> */}
       <Contact contactPop={contactPop} setContactPop={setContactPop} />
-      {/* <Team /> */}
+      <Team />
       <Footer />
     </div>
   )
