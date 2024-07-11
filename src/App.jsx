@@ -22,7 +22,7 @@ const App = () => {
       {/* <Services /> */}
       <Contact contactPop={contactPop} setContactPop={setContactPop} />
       {/* <Team /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
