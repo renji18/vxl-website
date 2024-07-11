@@ -27,3 +27,54 @@ body {
 .slick-arrow {
   display: none !important;
 }
+
+.why-us-slider-boxes {
+  height: 300px;
+}
+
+/* why us slider responsives */
+@media (min-width: 400px) {
+  .why-us-slider-boxes {
+    height: 350px;
+  }
+}
+@media (min-width: 440px) {
+  .why-us-slider-boxes {
+    height: 370px;
+  }
+}
+@media (min-width: 460px) {
+  .why-us-slider-boxes {
+    height: 400px;
+  }
+}
+@media (min-width: 500px) {
+  .why-us-slider-boxes {
+    height: 450px;
+  }
+}
+@media (min-width: 570px) {
+  .why-us-slider-boxes {
+    height: 500px;
+  }
+}
+@media (min-width: 625px) {
+  .why-us-slider-boxes {
+    height: 540px;
+  }
+}
+@media (min-width: 640px) {
+  .why-us-slider-boxes {
+    height: 450px;
+  }
+}
+@media (min-width: 920px) {
+  .why-us-slider-boxes {
+    height: 480px;
+  }
+}
+@media (min-width: 985px) {
+  .why-us-slider-boxes {
+    height: 500px;
+  }
+}

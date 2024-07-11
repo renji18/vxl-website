@@ -6,7 +6,7 @@ const AboutUs = () => {
   const [readMore, setReadMore] = useState(false)
 
   return (
-    <div className="md:min-h-screen lg:px-20 xl:px-28 flex justify-center items-center">
+    <div className="sm:min-h-screen mb-20 lg:mb-0 lg:px-20 xl:px-28 flex justify-center items-center">
       <div className="flex px-10 sm:px-20 md:px-28 lg:px-0 flex-col lg:flex-row items-center justify-center gap-10 xl:gap-16 2xl:gap-20">
         <div
           className="border lg:translate-y-8 xl:translate-y-4 rounded-md mt-10 border-[#7129D6] p-1"

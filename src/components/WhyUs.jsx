@@ -78,14 +78,14 @@ function WhyUs() {
             </p>
           </div>
         </div>
-        <div className="h-[260px] w-[260px] md:h-[350px] md:w-[350px] xl:h-[450px] relative xl:w-[450px] lg:translate-y-5 xl:translate-y-0">
+        <div className="why-us-slider-boxes w-[80vw] sm:w-[60vw] md:w-[50vw] lg:h-[350px] lg:w-[350px] xl:h-[450px] relative xl:w-[450px] lg:translate-y-5 xl:translate-y-0">
           <Slider {...settings}>
             {slideImg?.map((si, indx) => (
               <div key={indx}>
                 <img
                   src={si}
                   alt={indx}
-                  className={`rounded opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover h-[260px] w-[260px] md:h-[350px] md:w-[350px] xl:h-[450px] xl:w-[450px]`}
+                  className={`rounded opacity-100 lg:opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover why-us-slider-boxes w-[80vw] sm:w-[60vw] md:w-[50vw] lg:h-[350px] lg:w-[350px] xl:h-[450px] xl:w-[450px]`}
                 />
               </div>
             ))}
