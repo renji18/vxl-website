@@ -88,10 +88,10 @@ const Team = () => {
 
   return (
     <section className="sticky min-h-screen mt-20 pt-16 mb-[150px]">
-      <div className="flex flex-col mx-20 mb-[35px] md:mb-[57px] xl:mb-[77px]">
+      <div className="flex flex-col lg:mx-20 mb-[35px] md:mb-[57px] xl:mb-[77px]">
         <p className="font-bold text-6xl text-center">Team</p>
       </div>
-      <div className="flex flex-wrap justify-evenly gap-y-5 sm:gap-y-10 mx-2 sm:mx-3 xl:mx-20">
+      <div className="flex flex-wrap px-2 gap-x-2 justify-evenly gap-y-5 sm:gap-y-10 sm:mx-3 xl:mx-20">
         {data?.map((row) => (
           <TeamCard key={row?.name} data={row} />
         ))}

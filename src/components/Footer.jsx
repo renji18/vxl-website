@@ -20,7 +20,7 @@ const Footer = () => {
           ledger
           <img
             src={dashX}
-            className="absolute scale-90 sm:scale-100 sm:left-[170px] left-[125px] sm:bottom-0.5"
+            className="absolute scale-90 sm:scale-100 sm:left-[170px] left-[125px] bottom-0 sm:bottom-0.5"
             alt=""
           />
         </p>

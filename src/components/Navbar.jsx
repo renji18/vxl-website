@@ -38,7 +38,7 @@ const NavBar = ({ setContactPop }) => {
         vault<span className="text-[28px] sm:text-[35px]">X</span>ledger
         <img
           src={dashX}
-          className="absolute left-16 scale-90 sm:scale-100 sm:left-20 bottom-0.5"
+          className="absolute left-16 scale-90 sm:scale-100 sm:left-20 bottom-0 sm:bottom-0.5"
           alt=""
         />
       </p>
