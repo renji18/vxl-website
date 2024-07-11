@@ -73,7 +73,7 @@ const Services = () => {
                     : null
                 } absolute scale-50 sm:scale-[0.65] md:scale-75 xl:scale-100`}
               />
-              <div className="font-semibold tracking-wide text-[15px] sm:text-[16px] lg:text-[18px]">
+              <div className="font-semibold tracking-wide text-[16px] lg:text-[18px]">
                 <p className="leading-none">{e.title1}</p>
                 <p className="text-[#7129D6] leading-none mt-0.5 lg:mt-1">
                   {e.title}
