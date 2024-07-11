@@ -27,24 +27,14 @@ function WhyUs() {
 
   return (
     <div className="min-h-screen lg:px-20 xl:px-28 flex flex-col lg:flex-row items-center justify-center">
-      <div className="relative w-full lg:hidden px-10 mb-3">
-        <img
-          src={asterisks}
-          alt=""
-          className="absolute -top-[53px] left-[93px] md:-top-[56px] md:left-[118px] lg:-top-[55px] xl:-top-[58px] lg:left-[157px] scale-50 md:scale-75 lg:scale-90 xl:scale-100 xl:left-[208px] rotate-[110deg]"
-        />
-        <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
-          Why Us?
-        </h1>
-      </div>
-      <div className="flex px-9 sm:px-20 md:px-28 lg:px-0 flex-col-reverse lg:flex-row items-center justify-center gap-6 lg:gap-12 xl:gap-24">
-        <div className="lg:w-[500px] lg:h-[420px] xl:w-[600px] items-start gap-12 xl:h-[500px] flex flex-col relative justify-between">
+      <div className="flex px-9 sm:px-20 md:px-28 lg:px-0 flex-col-reverse lg:flex-row items-center justify-center gap-10 lg:gap-12 xl:gap-24">
+        <div className="lg:w-[500px] lg:h-[420px] xl:w-[600px] items-start gap-2.5 lg:gap-12 xl:h-[500px] flex flex-col relative justify-between">
           <img
             src={asterisks}
             alt=""
-            className="-top-[52px] left-[52px] md:-top-[56px] md:left-[79px] lg:-top-[55px] xl:-top-[58px] lg:left-[157px] scale-50 md:scale-75 hidden lg:block lg:absolute lg:scale-90 xl:scale-100 xl:left-[208px] rotate-[110deg]"
+            className="-top-[52px] left-[52px] md:-top-[56px] md:left-[79px] lg:-top-[55px] xl:-top-[58px] lg:left-[157px] scale-50 md:scale-75 absolute lg:scale-90 xl:scale-100 xl:left-[208px] rotate-[110deg]"
           />
-          <h1 className="font-bold hidden lg:block text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
+          <h1 className="font-bold  text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
             Why Us?
           </h1>
           <div className="font-light text-sm md:text-base xl:text-lg tracking-wide gap-3 lg:gap-0 flex flex-col justify-between flex-1">

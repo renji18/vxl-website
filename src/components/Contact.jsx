@@ -21,12 +21,12 @@ const Contact = ({ contactPop, setContactPop }) => {
         onClick={() => setContactPop(false)}
       />
       <div
-        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex sm:scale-95 items-center justify-center p-5 sm:p-14 xl:p-20 rounded-xl`}
+        className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex scale-110 h-[400px] sm:scale-95 items-center justify-center p-5 sm:p-14 xl:p-20 rounded-xl`}
         // style={{
         //   boxShadow: "0 5px 20px -5px #7129D6",
         // }}
       >
-        <div className="flex flex-col justify-center items-center gap-3 sm:gap-[15px] xl:gap-[20px]">
+        <div className="flex flex-col justify-center items-center gap-[16px] xl:gap-[20px]">
           <div className="flex bg-black border-[#7129D6] border-2  items-center gap-2 xl:gap-3 rounded-[5px] px-[17px] ">
             <img src={user} alt="" className="h-[18px] xl:h-[24px]" />
             <input
@@ -36,7 +36,7 @@ const Contact = ({ contactPop, setContactPop }) => {
               value={input.name}
               onChange={handleInput}
               autoComplete="off"
-              className="bg-black tracking-wider text-sm xl:text-base py-[5px] sm:py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
+              className="bg-black tracking-wider text-sm xl:text-base py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
             />
           </div>
 
@@ -49,7 +49,7 @@ const Contact = ({ contactPop, setContactPop }) => {
               value={input.email}
               onChange={handleInput}
               autoComplete="off"
-              className="bg-black tracking-wider text-sm xl:text-base py-[5px] sm:py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
+              className="bg-black tracking-wider text-sm xl:text-base py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
             />
           </div>
           <div className="flex bg-black border-[#7129D6] border-2 items-start gap-2 xl:gap-3 py-[11px] rounded-[5px] px-[17px]">
