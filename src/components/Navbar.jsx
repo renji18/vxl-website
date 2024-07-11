@@ -44,7 +44,7 @@ const NavBar = ({ setContactPop }) => {
       </p>
       <button
         onClick={() => setContactPop(true)}
-        className="flex items-center gap-1.5 border-[3.5px] sm:border-4 border-[#7129D6] text-black hover:text-white hover:bg-[#7129D6] font-[700] transition-all duration-300 ease-linear bg-white pr-[10px] sm:pr-[16px] pl-[6px] sm:pl-[10px] py-[3px] sm:py-[7px] text-[13px] sm:text-[15px] leading-[25.1px] rounded-[10px]"
+        className="flex items-center gap-1.5 border-[3.5px] sm:border-4 border-[#7129D6] text-white hover:text-white hover:bg-[#7129D6] font-[700] transition-all duration-300 ease-linear bg-black pr-[10px] sm:pr-[16px] pl-[6px] sm:pl-[10px] py-[3px] sm:py-[7px] text-[13px] sm:text-[15px] leading-[25.1px] rounded-[10px]"
       >
         <img
           src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif"

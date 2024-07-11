@@ -1,4 +1,5 @@
 import React from "react"
+import { Typewriter } from "react-simple-typewriter"
 import ai from "../assets/services/ai.svg"
 import uiux from "../assets/services/uiux.svg"
 import mobile from "../assets/services/mobile.svg"
@@ -43,8 +44,30 @@ const Services = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center gap-5 lg:gap-0 lg:justify-between items-center lg:ml-4 xl:ml-32 mt-32 sm:mt-0 sm:min-h-screen">
       <div className="font-bold text-[30px] sm:text-[40px] xl:text-[50px] lg:text-[38px] tracking-wide">
-        <p className="leading-none">Learn More About</p>
-        <p className="text-[#7129D6] mt-0.5 leading-none">Our Services</p>
+        {/* <p className="leading-none">Learn More About</p>
+        <p className="text-[#7129D6] mt-0.5 leading-none">Our Services</p> */}
+        <p className="leading-none">
+          <Typewriter
+            words={["Learn More About"]}
+            loop={1}
+            cursor
+            cursorStyle=""
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={0}
+          />
+        </p>
+        <p className="text-[#7129D6] mt-0.5 leading-none">
+          <Typewriter
+            words={["Our Services"]}
+            loop={1}
+            cursor
+            cursorStyle="_"
+            typeSpeed={50}
+            deleteSpeed={50}
+            delaySpeed={0}
+          />
+        </p>
       </div>
       <div className="">
         <div className="grid grid-cols-[auto,auto] sm:grid-cols-[auto,auto,auto] gap-1 sm:gap-1.5 xl:gap-3 p-6">
@@ -54,7 +77,7 @@ const Services = () => {
                 indx === 0
                   ? "row-span-2"
                   : "h-[140px] sm:h-[200px] lg:h-[270px] xl:h-[300px]"
-              }  flex flex-col lg:w-[190px] xl:w-[220px] justify-end p-3 relative bg-black border-[0.7px] border-white`}
+              }  flex flex-col lg:w-[190px] xl:w-[220px] justify-end p-3 relative bg-black/65 border-[0.7px] border-white`}
             >
               <img
                 src={e.icon}
