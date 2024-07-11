@@ -65,7 +65,7 @@ const Contact = ({ contactPop, setContactPop }) => {
           </div>
 
           <button
-            onClick={console.log(input)}
+            onClick={() => console.log(input)}
             className=" rounded-[8px] py-[6px] px-[40px] xl:py-[8px] xl:px-[45px] font-medium text-white bg-gradient-to-br from-[#7129D6] to-[#412565] "
           >
             Send

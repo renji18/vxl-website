@@ -47,7 +47,7 @@ const Services = () => {
         <p className="text-[#7129D6] mt-0.5 leading-none">Our Services</p>
       </div>
       <div className="">
-        <div className="grid grid-cols-[auto,auto] sm:grid-cols-[auto,auto,auto] gap-1.5 xl:gap-3 p-6">
+        <div className="grid grid-cols-[auto,auto] sm:grid-cols-[auto,auto,auto] gap-1 sm:gap-1.5 xl:gap-3 p-6">
           {services?.map((e, indx) => (
             <div
               className={`${
@@ -73,9 +73,9 @@ const Services = () => {
                     : null
                 } absolute scale-50 sm:scale-[0.65] md:scale-75 xl:scale-100`}
               />
-              <div className="font-semibold tracking-wide sm:text-[16px] lg:text-[18px]">
+              <div className="font-semibold tracking-wide text-[15px] sm:text-[16px] lg:text-[18px]">
                 <p className="leading-none">{e.title1}</p>
-                <p className="text-[#7129D6] leading-none sm:mt-0.5 lg:mt-1">
+                <p className="text-[#7129D6] leading-none mt-0.5 lg:mt-1">
                   {e.title}
                 </p>
               </div>
