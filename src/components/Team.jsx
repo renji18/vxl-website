@@ -33,7 +33,7 @@ const Team = () => {
     },
     {
       name: "Darshil Mistry",
-      position: "DIRECTOR",
+      position: "TECH LEAD",
       profile: darshil,
       socials: { linkedIn: "", github: "" },
       portfolio: "",
@@ -42,7 +42,7 @@ const Team = () => {
     },
     {
       name: "Aadarsh Jha",
-      position: "DIRECTOR",
+      position: "TECH LEAD",
       profile: aadarsh,
       socials: {
         linkedIn: "https://www.linkedin.com/in/aadarshJha1401/",
@@ -54,7 +54,7 @@ const Team = () => {
     },
     {
       name: "MohmedAnas Gandiwala",
-      position: "LEAD",
+      position: "MARKETING & MEDIA",
       profile: anas,
       socials: { linkedIn: "", github: "" },
       portfolio: "",
@@ -63,7 +63,7 @@ const Team = () => {
     },
     {
       name: "Manan Panchal",
-      position: "LEAD",
+      position: "MARKETING & MEDIA",
       profile: manan,
       socials: { linkedIn: "", github: "" },
       portfolio: "",
@@ -72,7 +72,7 @@ const Team = () => {
     },
     {
       name: "Mittal Suthar",
-      position: "DIRECTOR",
+      position: "FRONTEND DEVELOPER & UI/UX DESIGNER",
       profile: mittal,
       socials: {
         linkedIn: "https://www.linkedin.com/in/mittal-suthar/",
@@ -84,10 +84,13 @@ const Team = () => {
     },
     {
       name: "Susmit Kulkarni",
-      position: "DIRECTOR",
+      position: "AI/ML DEVELOPER",
       profile:
         "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
-      socials: { linkedIn: "", github: "" },
+      socials: {
+        linkedIn: "https://www.linkedin.com/in/susmit-kulkarni-5a626124b/",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
