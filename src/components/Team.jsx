@@ -26,7 +26,11 @@ const Team = () => {
       name: "Divyapalsinh Chauhan",
       position: "C0-FOUNDER",
       profile: divyapal,
-      socials: { linkedIn: "", github: "" },
+      socials: {
+        linkedIn:
+          "https://www.linkedin.com/in/divyapalsinh-chauhan-627916235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -35,7 +39,7 @@ const Team = () => {
       name: "Darshil Mistry",
       position: "TECH LEAD",
       profile: darshil,
-      socials: { linkedIn: "", github: "" },
+      socials: { linkedIn: "Linkedin.com/in/idarshilmistry", github: "" },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -56,7 +60,10 @@ const Team = () => {
       name: "MohmedAnas Gandiwala",
       position: "MARKETING & MEDIA",
       profile: anas,
-      socials: { linkedIn: "", github: "" },
+      socials: {
+        linkedIn: "https://linkedin.com/in/mohmedanas-gandiwala-a09264284",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
@@ -65,7 +72,10 @@ const Team = () => {
       name: "Manan Panchal",
       position: "MARKETING & MEDIA",
       profile: manan,
-      socials: { linkedIn: "", github: "" },
+      socials: {
+        linkedIn: "https://www.linkedin.com/in/manan-panchal2802/",
+        github: "",
+      },
       portfolio: "",
       about:
         "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",

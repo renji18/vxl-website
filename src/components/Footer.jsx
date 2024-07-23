@@ -28,9 +28,9 @@ const Footer = () => {
           <div>
             <FaLinkedinIn size={23} />
           </div>
-          <div>
+          {/* <div>
             <FaInstagram size={23} />
-          </div>
+          </div> */}
           {/* <div>
             <FaFacebookF size={16} />
           </div> */}
@@ -42,11 +42,31 @@ const Footer = () => {
           </div> */}
         </div>
       </div>
-      <div className="py-[13px] sm:py-[18px] sm:gap-[20px] xl:py-[24px] flex flex-wrap gap-x-[25px] gap-y-1 items-center xl:gap-[25px] text-[#FFFFFF] font-[400] text-[12px] xl:text-[14px] 2xl:text-[16px]">
-        <li>About Us</li>
+      <div className="py-[13px] sm:py-[18px] sm:gap-[20px] xl:py-[24px] flex flex-wrap gap-x-[25px] gap-y-1 items-center xl:gap-[25px] text-[#ffffff80] font-[400] text-[12px] xl:text-[14px] 2xl:text-[16px] tracking-wide">
+        {/* <li>About Us</li>
         <li>Contact Us</li>
         <li>Privacy Policy</li>
-        <li>Terms & Conditions</li>
+        <li>Terms & Conditions</li> */}
+        <p>
+          Designed and Developed by{" "}
+          <a
+            href="https://www.linkedin.com/in/aadarshJha1401/"
+            target="_blank"
+            className="text-white cursor-pointer"
+            rel="noreferrer"
+          >
+            Aadarsh
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/mittal-suthar/"
+            target="_blank"
+            className="text-white cursor-pointer"
+            rel="noreferrer"
+          >
+            Mittal
+          </a>
+        </p>
       </div>
     </div>
   )
