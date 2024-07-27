@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import NavBar from "./components/Navbar"
 import Home from "./components/Home"
 import WhyUs from "./components/WhyUs"
@@ -11,6 +11,16 @@ import CustomCursor from "./components/Cursor"
 
 const App = () => {
   const [contactPop, setContactPop] = useState(false)
+
+  useEffect(() => {
+    const handleContextmenu = (e) => {
+      e.preventDefault()
+    }
+    document.addEventListener("contextmenu", handleContextmenu)
+    return function cleanup() {
+      document.removeEventListener("contextmenu", handleContextmenu)
+    }
+  }, [])
 
   return (
     <div>
