@@ -25,18 +25,22 @@ const Footer = () => {
           />
         </p>
         <div className="flex items-center gap-[6px] sm:gap-[9px] md:gap-[20px] xl:gap-[23px] scale-90 sm:scale-100">
-          <div>
+          <a
+            href="https://www.linkedin.com/company/vaultxledger-0112/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedinIn size={23} />
-          </div>
+          </a>
           {/* <div>
             <FaInstagram size={23} />
           </div> */}
           {/* <div>
             <FaFacebookF size={16} />
           </div> */}
-          <div>
+          {/* <div>
             <FaTwitter size={20} />
-          </div>
+          </div> */}
           {/* <div>
             <FaYoutube size={22} />
           </div> */}
