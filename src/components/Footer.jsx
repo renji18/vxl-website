@@ -46,11 +46,7 @@ const Footer = () => {
           </div> */}
         </div>
       </div>
-      <div className="py-[13px] sm:py-[18px] sm:gap-[20px] xl:py-[24px] flex flex-wrap gap-x-[25px] gap-y-1 items-center xl:gap-[25px] text-[#ffffff80] font-[400] text-[12px] xl:text-[14px] 2xl:text-[16px] tracking-wide">
-        {/* <li>About Us</li>
-        <li>Contact Us</li>
-        <li>Privacy Policy</li>
-        <li>Terms & Conditions</li> */}
+      {/* <div className="py-[13px] sm:py-[18px] sm:gap-[20px] xl:py-[24px] flex flex-wrap gap-x-[25px] gap-y-1 items-center xl:gap-[25px] text-[#ffffff80] font-[400] text-[12px] xl:text-[14px] 2xl:text-[16px] tracking-wide">
         <p>
           Designed and Developed by{" "}
           <a
@@ -71,7 +67,7 @@ const Footer = () => {
             Mittal
           </a>
         </p>
-      </div>
+      </div> */}
     </div>
   )
 }

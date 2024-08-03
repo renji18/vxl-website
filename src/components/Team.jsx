@@ -20,7 +20,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Driven by relentless pursuit of innovation and problem-solving, striving to make valuable contributions towards Nation Building. ",
     },
     {
       name: "Divyapalsinh Chauhan",
@@ -42,7 +42,7 @@ const Team = () => {
       socials: { linkedIn: "Linkedin.com/in/idarshilmistry", github: "" },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Life is too short to think, just take a leap of faith. Developer by the day, gamer by the night.",
     },
     {
       name: "Aadarsh Jha",
@@ -54,7 +54,7 @@ const Team = () => {
       },
       portfolio: "https://aadarsh-jha-portfolio.netlify.app/",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Turning complex problems into elegant code. Passionate about leveraging technology to build the future, one line at a time.",
     },
     {
       name: "MohmedAnas Gandiwala",
@@ -66,7 +66,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Graphic design is my canvas where creativity meets strategy. Through color, form, and digital artistry, I craft visuals that captivate and communicate with purpose.",
     },
     {
       name: "Manan Panchal",
@@ -90,7 +90,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Code artisan blending creativity with technology. Building impactful software solutions that push boundaries and inspire change.",
     },
     {
       name: "Susmit Kulkarni",
