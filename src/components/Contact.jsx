@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import mail from "../assets/mail.svg"
 import user from "../assets/user.svg"
 import message from "../assets/message-2.svg"
@@ -9,6 +9,28 @@ const Contact = ({ contactPop, setContactPop }) => {
   const handleInput = (e) => {
     setInput({ ...input, [e.target.id]: e.target.value })
   }
+
+  useEffect(() => {
+    const disableScroll = (e) => {
+      e.preventDefault()
+    }
+
+    if (contactPop) {
+      window.addEventListener("scroll", disableScroll, { passive: false })
+      window.addEventListener("wheel", disableScroll, { passive: false })
+      window.addEventListener("touchmove", disableScroll, { passive: false })
+    } else {
+      window.removeEventListener("scroll", disableScroll, { passive: false })
+      window.removeEventListener("wheel", disableScroll, { passive: false })
+      window.removeEventListener("touchmove", disableScroll, { passive: false })
+    }
+
+    return () => {
+      window.removeEventListener("scroll", disableScroll, { passive: false })
+      window.removeEventListener("wheel", disableScroll, { passive: false })
+      window.removeEventListener("touchmove", disableScroll, { passive: false })
+    }
+  }, [contactPop])
 
   return (
     <div

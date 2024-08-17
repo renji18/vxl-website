@@ -24,6 +24,26 @@ function Home() {
       window.removeEventListener("scroll", handleScrollVideo)
     }
   }, [])
+
+  useEffect(() => {
+    const videoElement = document.querySelector("video")
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            videoElement.play()
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.1 }
+    )
+
+    observer.observe(videoElement)
+
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="flex relative h-screen justify-between sm:pl-[8rem] md:pl-[9.5rem] lg:pl-[12rem] items-center">
       <p className="font-[700] absolute left-10 xl:left-20 sm:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] text-[32px] sm:text-[40px] xl:text-[55px] leading-tight sm:leading-[50px] xl:leading-[60px] tracking-wider z-10">
@@ -43,6 +63,7 @@ function Home() {
         autoPlay
         loop
         playsInline
+        preload="auto"
         className={`${
           isScrolled ? "opacity-[0.2]" : "opacity-[0.5]"
         } opacity-[0.2] z-[-5] fixed scale-[0.8] transition-all duration-300 ease-linear`}
