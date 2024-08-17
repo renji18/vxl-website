@@ -7,7 +7,7 @@ import divyapal from "../assets/teams/divyapal.jpeg"
 import anas from "../assets/teams/anas.jpg"
 import darshil from "../assets/teams/darshil.jpg"
 import manan from "../assets/teams/manan.jpg"
-import susmit from "../assets/teams/susmit.png"
+import susmit from "../assets/teams/susmit.jpg"
 
 const Team = () => {
   const data = [
@@ -34,7 +34,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Relentless problem solver, unwavering fighter. Empathetic leader prioritizing team well-being and fosters innovation through collaboration and persistence.",
     },
     {
       name: "Darshil Mistry",
@@ -79,7 +79,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Crafting impactful designs and pioneering tech solutions. Committed to continuous learning and constant upgrades to shape the future.",
     },
     {
       name: "Mittal Suthar",
@@ -103,7 +103,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis minima provident esse hic",
+        "Digital magus, open-source crusader, imperial historian. Building the future, one commit at a time.",
     },
   ]
 
