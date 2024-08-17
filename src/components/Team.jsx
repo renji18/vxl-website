@@ -7,6 +7,7 @@ import divyapal from "../assets/teams/divyapal.jpeg"
 import anas from "../assets/teams/anas.jpg"
 import darshil from "../assets/teams/darshil.jpg"
 import manan from "../assets/teams/manan.jpg"
+import susmit from "../assets/teams/susmit.png"
 
 const Team = () => {
   const data = [
@@ -95,8 +96,7 @@ const Team = () => {
     {
       name: "Susmit Kulkarni",
       position: "AI/ML DEVELOPER",
-      profile:
-        "https://i.pinimg.com/564x/e9/c4/2e/e9c42e19607ff4923ad0696f2f27e52c.jpg",
+      profile: susmit,
       socials: {
         linkedIn: "https://www.linkedin.com/in/susmit-kulkarni-5a626124b/",
         github: "",

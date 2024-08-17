@@ -5,7 +5,7 @@ import aadarsh from "../assets/whyus/aadarsh.jpeg"
 import mittal from "../assets/whyus/mittal.jpeg"
 import divyapal from "../assets/whyus/divyapal.jpeg"
 import kartik from "../assets/whyus/kartik.jpeg"
-import asterisks from "../assets/asterisk.svg"
+import asterisks from "../assets/svg/asterisk.svg"
 import { useState } from "react"
 
 function WhyUs() {

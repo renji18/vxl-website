@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
-import mail from "../assets/mail.svg"
-import user from "../assets/user.svg"
-import message from "../assets/message-2.svg"
+import mail from "../assets/svg/mail.svg"
+import user from "../assets/svg/user.svg"
+import message from "../assets/svg/message-2.svg"
 
 const Contact = ({ contactPop, setContactPop }) => {
   const [input, setInput] = useState({})

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import about_us from "../assets/about_us.jpg"
-import asterisks from "../assets/asterisk.svg"
+import asterisks from "../assets/svg/asterisk.svg"
 
 const AboutUs = () => {
   const [readMore, setReadMore] = useState(false)

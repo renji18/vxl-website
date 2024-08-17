@@ -1,5 +1,5 @@
 import React from "react"
-import dashX from "../assets/dashx.svg"
+import dashX from "../assets/svg/dashx.svg"
 import {
   FaInstagram,
   FaFacebookF,

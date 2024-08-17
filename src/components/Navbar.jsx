@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import { useState } from "react"
-import dashX from "../assets/dashx.svg"
+import dashX from "../assets/svg/dashx.svg"
 
 const NavBar = ({ setContactPop }) => {
   const [isScrolled, setIsScrolled] = useState(false)
