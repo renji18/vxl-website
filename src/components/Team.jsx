@@ -67,7 +67,7 @@ const Team = () => {
       },
       portfolio: "",
       about:
-        "Graphic design is my canvas where creativity meets strategy. Through color, form, and digital artistry, I craft visuals that captivate and communicate with purpose.",
+        "Graphic designers are visual storytellers, weaving tales of beauty and function, one design at time.",
     },
     {
       name: "Manan Panchal",
