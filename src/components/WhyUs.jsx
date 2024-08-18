@@ -56,8 +56,8 @@ function WhyUs() {
               </span>{" "}
               <span className={`${readMore ? "" : "hidden"} md:block`}>
                 credibility, demonstrated by our active collaborations with the
-                Indian government. This partnership underscores our commitment
-                to delivering reliable and high-quality service.
+                Legal Department of Government. This partnership underscores our
+                commitment to delivering reliable and high-quality service.
               </span>
             </p>
             <p className={`${readMore ? "" : "hidden"} md:block`}>

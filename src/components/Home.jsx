@@ -27,7 +27,7 @@ function Home() {
 
   return (
     <div className="flex relative h-screen justify-between sm:pl-[8rem] md:pl-[9.5rem] lg:pl-[12rem] items-center">
-      <p className="font-[700] absolute left-10 xl:left-20 sm:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] text-[32px] sm:text-[40px] xl:text-[55px] leading-tight sm:leading-[50px] xl:leading-[60px] tracking-wider z-10">
+      <p className="font-[700] absolute text-center md:text-start w-full md:left-10 xl:left-20 sm:max-w-[60%] lg:max-w-[50%] xl:max-w-[40%] text-[32px] sm:text-[40px] xl:text-[55px] leading-tight sm:leading-[50px] xl:leading-[60px] tracking-wider z-10">
         <Typewriter
           words={["Unlocking Your Digital Fort Knox"]}
           loop={1}

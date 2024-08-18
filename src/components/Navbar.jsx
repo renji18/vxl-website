@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useState } from "react"
 import dashX from "../assets/svg/dashx.svg"
+import logo_v2 from "../assets/logo_v2.png"
 
 const NavBar = ({ setContactPop }) => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -34,14 +35,15 @@ const NavBar = ({ setContactPop }) => {
         boxShadow: isScrolled && "0 0 20px -12px #ffffffb3",
       }}
     >
-      <p className="text-[16px] sm:text-[20px] font-mulish relative tracking-widest -translate-y-1 font-[700]">
+      {/* <p className="text-[16px] sm:text-[20px] font-mulish relative tracking-widest -translate-y-1 font-[700]">
         vault<span className="text-[28px] sm:text-[35px]">X</span>ledger
         <img
           src={dashX}
           className="absolute left-16 scale-90 sm:scale-100 sm:left-20 bottom-0 sm:bottom-0.5"
           alt=""
         />
-      </p>
+      </p> */}
+      <img src={logo_v2} alt="logo" className="w-[160px]" />
       <button
         onClick={() => setContactPop(true)}
         className="flex items-center gap-1.5 border-[3.5px] sm:border-4 border-[#7129D6] text-white hover:text-white hover:bg-[#7129D6] font-[700] transition-all duration-300 ease-linear bg-black pr-[10px] sm:pr-[16px] pl-[6px] sm:pl-[10px] py-[3px] sm:py-[7px] text-[13px] sm:text-[15px] leading-[25.1px] rounded-[10px]"
