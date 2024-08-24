@@ -38,7 +38,7 @@ const Team = () => {
     },
     {
       name: "Darshil Mistry",
-      position: "TECH LEAD",
+      position: "FOUNDING MEMBER & TECH LEAD",
       profile: darshil,
       socials: { linkedIn: "Linkedin.com/in/idarshilmistry", github: "" },
       portfolio: "",
@@ -47,7 +47,7 @@ const Team = () => {
     },
     {
       name: "Aadarsh Jha",
-      position: "TECH LEAD",
+      position: "FOUNDING MEMBER & TECH LEAD",
       profile: aadarsh,
       socials: {
         linkedIn: "https://www.linkedin.com/in/aadarshJha1401/",

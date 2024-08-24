@@ -73,6 +73,7 @@ const Services = () => {
         <div className="grid grid-cols-[auto,auto] sm:grid-cols-[auto,auto,auto] gap-1 sm:gap-1.5 xl:gap-3 p-6">
           {services?.map((e, indx) => (
             <div
+              key={indx}
               className={`${
                 indx === 0
                   ? "row-span-2"
