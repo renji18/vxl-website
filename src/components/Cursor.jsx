@@ -11,9 +11,6 @@ const CustomCursor = () => {
       innerCursorRef.current.style.left = `${clientX}px`
       innerCursorRef.current.style.top = `${clientY}px`
 
-      // cursorRef.current.style.left = `${clientX}px`
-      // cursorRef.current.style.top = `${clientY}px`
-
       cursorRef.current.animate(
         {
           left: `${clientX}px`,

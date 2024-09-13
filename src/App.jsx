@@ -8,6 +8,9 @@ import Contact from "./components/Contact"
 import Team from "./components/Team"
 import Footer from "./components/Footer"
 import CustomCursor from "./components/Cursor"
+import "./css/slider.css"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 const App = () => {
   const [contactPop, setContactPop] = useState(false)
@@ -27,11 +30,11 @@ const App = () => {
   }, [])
 
   return (
-    <div className="selection:bg-myPurple">
+    <div id="app" className="selection:bg-myPurple overflow-x-hidden">
       <CustomCursor />
       <NavBar setContactPop={setContactPop} />
       <Home />
-      <div className="h-[80vh] w-screen" />
+      <div className="h-[180vh] w-screen" />
       <AboutUs />
       <WhyUs />
       <Services />

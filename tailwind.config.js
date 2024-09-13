@@ -5,10 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        mulish: ["Mulish", "sans-serif"],
-        lora: ["Lora", "sans-serif"],
-      },
       colors: {
         myPurple: '#7129D6'
       },
