@@ -7,7 +7,7 @@ const NavBar = ({ setContactPop }) => {
   return (
     <div
       id="navbar"
-      className="flex fixed top-0 left-0 right-0 justify-between items-center z-[5054] sm:py-[15px] p-[1rem] sm:px-[2rem] transition-all duration-300 ease-linear opacity-0"
+      className="flex fixed top-0 left-0 right-0 justify-between items-center z-[5054] sm:py-[15px] p-[1rem] sm:px-[2rem] transition-all duration-300 ease-linear opacity-0 blur-backdrop-filter"
       style={{
         boxShadow: "0 0 20px -12px #ffffffb3",
       }}

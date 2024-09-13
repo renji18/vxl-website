@@ -40,20 +40,20 @@ body {
   100% {
     opacity: 0;
     transform: scale(2);
-    background: #7129D6;
+    background: #7129d6;
   }
 }
 
-/* .slick-arrow {
+.slick-arrow {
   display: none !important;
-} */
-/* 
+}
+
 .why-us-slider-boxes {
   height: 300px;
-} */
+}
 
 /* why us slider responsives */
-/* @media (min-width: 400px) {
+@media (min-width: 400px) {
   .why-us-slider-boxes {
     height: 350px;
   }
@@ -97,4 +97,4 @@ body {
   .why-us-slider-boxes {
     height: 500px;
   }
-} */
+}
