@@ -12,27 +12,32 @@ import CustomCursor from "./components/Cursor"
 const App = () => {
   const [contactPop, setContactPop] = useState(false)
 
+  // useEffect(() => {
+  //   const handleContextmenu = (e) => {
+  //     e.preventDefault()
+  //   }
+  //   document.addEventListener("contextmenu", handleContextmenu)
+  //   return function cleanup() {
+  //     document.removeEventListener("contextmenu", handleContextmenu)
+  //   }
+  // }, [])
+
   useEffect(() => {
-    const handleContextmenu = (e) => {
-      e.preventDefault()
-    }
-    document.addEventListener("contextmenu", handleContextmenu)
-    return function cleanup() {
-      document.removeEventListener("contextmenu", handleContextmenu)
-    }
+    window.history.scrollRestoration = "manual"
   }, [])
 
   return (
-    <div>
+    <div className="selection:bg-myPurple">
       <CustomCursor />
       <NavBar setContactPop={setContactPop} />
       <Home />
+      <div className="h-[80vh] w-screen" />
       <AboutUs />
       <WhyUs />
-      <Services />
-      <Contact contactPop={contactPop} setContactPop={setContactPop} />
-      <Team />
-      <Footer />
+      {/* <Services /> */}
+      {/* <Contact contactPop={contactPop} setContactPop={setContactPop} /> */}
+      {/* <Team /> */}
+      {/* <Footer /> */}
     </div>
   )
 }

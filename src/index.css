@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -10,7 +11,7 @@ body {
   color: #ffffff;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  cursor: none;
+  /* cursor: none; */
 }
 
 /* Hide the default scrollbar */
@@ -24,16 +25,35 @@ body {
   -webkit-backdrop-filter: blur(6px);
 }
 
-.slick-arrow {
-  display: none !important;
+.pulse span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+  opacity: 0.8;
+  animation: pulseAnimate 4s ease-out infinite;
+  animation-delay: calc(1s * var(--i));
 }
 
+@keyframes pulseAnimate {
+  100% {
+    opacity: 0;
+    transform: scale(2);
+    background: #7129D6;
+  }
+}
+
+/* .slick-arrow {
+  display: none !important;
+} */
+/* 
 .why-us-slider-boxes {
   height: 300px;
-}
+} */
 
 /* why us slider responsives */
-@media (min-width: 400px) {
+/* @media (min-width: 400px) {
   .why-us-slider-boxes {
     height: 350px;
   }
@@ -77,4 +97,4 @@ body {
   .why-us-slider-boxes {
     height: 500px;
   }
-}
+} */
