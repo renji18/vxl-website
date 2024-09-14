@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import NavBar from "./components/Navbar"
 import Home from "./components/Home"
 import WhyUs from "./components/WhyUs"
@@ -15,19 +15,19 @@ import "slick-carousel/slick/slick-theme.css"
 const App = () => {
   const [contactPop, setContactPop] = useState(false)
 
-  useEffect(() => {
-    const handleContextmenu = (e) => {
-      e.preventDefault()
-    }
-    document.addEventListener("contextmenu", handleContextmenu)
-    return function cleanup() {
-      document.removeEventListener("contextmenu", handleContextmenu)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const handleContextmenu = (e) => {
+  //     e.preventDefault()
+  //   }
+  //   document.addEventListener("contextmenu", handleContextmenu)
+  //   return function cleanup() {
+  //     document.removeEventListener("contextmenu", handleContextmenu)
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    window.history.scrollRestoration = "manual"
-  }, [])
+  // useEffect(() => {
+  //   window.history.scrollRestoration = "manual"
+  // }, [])
 
   return (
     <div id="app" className="selection:bg-myPurple overflow-x-hidden">
