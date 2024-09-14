@@ -9,24 +9,26 @@ const EffectController = () => {
       const homeDesc = document.getElementById("home-desc")
       const navbar = document.getElementById("navbar")
       const about = document.getElementById("about-us")
+
       let value = window.scrollY
+      const vw = window.innerWidth
+
       if (value / 20 < 90) {
-        // circleAsset.style.visibility = "visible"
         videoAsset.style.opacity = ""
         navbar.style.opacity = ""
         about.style.opacity = ""
         circleAsset.style.opacity = 0.8 - value / 2500
         homeDesc.style.opacity = 1 - value / 2000
-        // homeDesc.style.visibility = "visible"
-        // circleAsset.style.transform = `rotateX(${value / 10}deg)`
-        // circleAsset.style.transform = `rotateZ(${value / 10}deg)`
         circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 10}deg)`
-        circleAsset.style.width = `${value / 10 + 50}%`
+
+        if (vw > 900) {
+          circleAsset.style.width = `${value / 10 + 50}%`
+        } else {
+          circleAsset.style.width = `${value / 10 + 70}%`
+        }
       } else {
-        // homeDesc.style.visibility = "hidden"
         circleAsset.style.opacity = 0.8 - value / 2500
         homeDesc.style.opacity = 1 - value / 2000
-        // circleAsset.style.visibility = "hidden"
         videoAsset.style.opacity = 0.3
         navbar.style.opacity = 1
         about.style.opacity = 1

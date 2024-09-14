@@ -24,7 +24,7 @@ function WhyUs() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center mt-0 lg:mt-0">
+    <div className="lg:min-h-screen flex items-center justify-center mt-0 lg:mt-0">
       <div className="w-full max-w-[300px] md:max-w-[470px] lg:max-w-[870px] xl:max-w-[1170px]">
         <div className="relative w-full">
           <p className="font-bold text-4xl md:text-5xl lg:text-6xl">Why Us?</p>

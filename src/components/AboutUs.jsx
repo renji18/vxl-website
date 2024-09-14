@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div
       id="about-us"
-      className="md:min-h-screen opacity-0 flex items-center justify-center transition-all duration-1000 ease-linear"
+      className="min-h-screen opacity-0 flex items-center justify-center transition-all duration-1000 ease-linear"
     >
       <div className="w-full max-w-[300px] md:max-w-[470px] lg:max-w-[870px] xl:max-w-[1170px]">
         <div className="relative text-end w-full">
