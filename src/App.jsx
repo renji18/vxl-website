@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import NavBar from "./components/Navbar"
 import Home from "./components/Home"
 import WhyUs from "./components/WhyUs"
@@ -11,27 +11,18 @@ import CustomCursor from "./components/Cursor"
 import "./css/slider.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+import EffectController from "./components/EffectController"
 
 const App = () => {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual"
+  }, [])
+
   const [contactPop, setContactPop] = useState(false)
-
-  // useEffect(() => {
-  //   const handleContextmenu = (e) => {
-  //     e.preventDefault()
-  //   }
-  //   document.addEventListener("contextmenu", handleContextmenu)
-  //   return function cleanup() {
-  //     document.removeEventListener("contextmenu", handleContextmenu)
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   window.history.scrollRestoration = "manual"
-  // }, [])
-
   return (
     <div id="app" className="selection:bg-myPurple overflow-x-hidden">
-      <CustomCursor />
+      <EffectController />
+      {/* <CustomCursor /> */}
       <NavBar setContactPop={setContactPop} />
       <Home />
       <div className="h-[180vh] w-screen" />

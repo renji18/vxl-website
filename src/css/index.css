@@ -9,7 +9,7 @@ body {
   color: #ffffff;
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
-  cursor: none;
+  /* cursor: none; */
 }
 
 /* Hide the default scrollbar */
