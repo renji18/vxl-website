@@ -4,7 +4,7 @@ import aadarsh from "../assets/teams/aadarsh.jpeg"
 import mittal from "../assets/teams/mittal.jpeg"
 import kartik from "../assets/teams/kartik.jpg"
 import divyapal from "../assets/teams/divyapal.jpeg"
-import anas from "../assets/teams/anas.jpg"
+import anas from "../assets/teams/anas.jpeg"
 import darshil from "../assets/teams/darshil.jpg"
 import manan from "../assets/teams/manan.jpg"
 import susmit from "../assets/teams/susmit.jpg"
@@ -83,7 +83,7 @@ const Team = () => {
     },
     {
       name: "Mittal Suthar",
-      position: "FRONTEND DEVELOPER & UI/UX DESIGNER",
+      position: "FRONTEND DEV & UI/UX DESIGNER",
       profile: mittal,
       socials: {
         linkedIn: "https://www.linkedin.com/in/mittal-suthar/",
@@ -108,14 +108,16 @@ const Team = () => {
   ]
 
   return (
-    <section className="sticky min-h-screen mt-20 pt-16 mb-[150px]">
-      <div className="flex flex-col lg:mx-20 mb-[35px] md:mb-[57px] xl:mb-[77px]">
-        <p className="font-bold text-6xl text-center">Team</p>
-      </div>
-      <div className="flex flex-wrap px-2 gap-x-2 justify-evenly gap-y-5 sm:gap-y-10 sm:mx-3 xl:mx-20">
-        {data?.map((row) => (
-          <TeamCard key={row?.name} data={row} />
-        ))}
+    <section className="min-h-screen flex justify-center items-center mt-32 md:mt-20 mb-[40px] md:mb-[80px]">
+      <div className="w-full lg:max-w-[870px] xl:max-w-[1170px] flex flex-col items-center justify-center">
+        <div className="flex flex-col mx-20 mb-10">
+          <p className="font-bold text-4xl md:text-5xl lg:text-6xl">Team</p>
+        </div>
+        <div className="flex flex-wrap justify-evenly gap-x-3 gap-y-6 md:gap-y-10">
+          {data?.map((row) => (
+            <TeamCard key={row?.name} data={row} />
+          ))}
+        </div>
       </div>
     </section>
   )

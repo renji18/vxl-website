@@ -1,0 +1,35 @@
+/* slider arrows */
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+/* slider box size */
+.why-us-slider-boxes {
+  height: 350px;
+}
+
+/* why us slider responsives */
+/* md */
+@media (min-width: 501px) {
+  .why-us-slider-boxes {
+    height: 450px;
+  }
+}
+
+/* lg */
+/* @media (min-width: 901px) {
+  .why-us-slider-boxes {
+    height: 400px;
+  }
+} */
+
+/* xl */
+@media (min-width: 1201px) {
+  .why-us-slider-boxes {
+    height: 500px;
+  }
+}

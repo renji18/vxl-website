@@ -6,7 +6,6 @@ import message from "../assets/svg/message-2.svg"
 
 const Contact = ({ contactPop, setContactPop }) => {
   const formRef = useRef()
-  // const userRef = useRef()
   const [input, setInput] = useState({})
   const [showError, setShowError] = useState("")
   const [sentEmail, setSentEmail] = useState(false)
@@ -94,69 +93,7 @@ const Contact = ({ contactPop, setContactPop }) => {
       />
       <div
         className={`bg-black border-[#7129D6] border-b-4 z-[5058] flex scale-110 h-[410px] sm:scale-95 items-center justify-center p-5 sm:p-14 xl:p-20 rounded-xl relative`}
-        // style={{
-        //   boxShadow: "0 5px 20px -5px #7129D6",
-        // }}
       >
-        {/* <div className="flex flex-col justify-center items-center gap-[16px] xl:gap-[20px]">
-          <div className="flex bg-black border-[#7129D6] border-2  items-center gap-2 xl:gap-3 rounded-[5px] px-[17px] ">
-            <img src={user} alt="" className="h-[18px] xl:h-[24px]" />
-            <input
-              type="text"
-              placeholder="Name"
-              id="name"
-              value={input?.name}
-              onChange={handleInput}
-              autoComplete="off"
-              className="bg-black tracking-wider text-sm xl:text-base py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
-            />
-          </div>
-
-          <div className="flex bg-black border-[#7129D6] border-2 items-center gap-2 xl:gap-3 rounded-[5px] px-[17px]">
-            <img src={mail} alt="" className="h-[15px] xl:h-[20px]" />
-            <input
-              type="email"
-              placeholder="Email"
-              id="email"
-              value={input?.email}
-              onChange={handleInput}
-              autoComplete="off"
-              className="bg-black tracking-wider text-sm xl:text-base py-[7px] xl:py-[11px] w-[200px] sm:w-[350px] xl:w-[400px] outline-none"
-            />
-          </div>
-          <div className="flex bg-black border-[#7129D6] border-2 items-start gap-2 xl:gap-3 py-[11px] rounded-[5px] px-[17px]">
-            <img src={message} alt="" className="h-[19px] xl:h-[24px]" />
-            <textarea
-              placeholder="Message"
-              id="message"
-              value={input?.message}
-              onChange={handleInput}
-              rows={4}
-              className=" bg-black tracking-wider text-sm xl:text-base w-[200px] sm:w-[350px] xl:w-[400px] -mt-0.5 outline-none"
-            />
-          </div>
-
-          <button
-            onClick={() => {
-              sendEmail(
-                {
-                  from_name: input.name,
-                  from_email: input.email,
-                  message: input.message,
-                },
-                process.env.REACT_APP_EMAIL_TEMPLATE_VXL
-              )
-              sendEmail(
-                { to_name: input.name, message: input.message },
-                process.env.REACT_APP_EMAIL_TEMPLATE_USER
-              )
-            }}
-            className=" rounded-[8px] py-[6px] px-[40px] xl:py-[8px] xl:px-[45px] font-medium text-white bg-gradient-to-br from-[#7129D6] to-[#412565] "
-          >
-            Send
-          </button>
-        </div> */}
-
         {sentEmail ? (
           <div className="relative scale-[1.5]">
             <iframe
@@ -233,25 +170,12 @@ const Contact = ({ contactPop, setContactPop }) => {
                   formRef.current,
                   process.env.REACT_APP_EMAIL_TEMPLATE_VXL
                 )
-                // sendEmail(
-                //   userRef.current,
-                //   process.env.REACT_APP_EMAIL_TEMPLATE_USER
-                // )
               }}
             >
               Send Email
             </button>
           </form>
         )}
-
-        {/* <form
-          className="hidden"
-          onClick={(e) => e.preventDefault()}
-          ref={userRef}
-        >
-          <input type="text" name="to_name" value={input?.name} />
-          <textarea name="message" value={input?.message}></textarea>
-        </form> */}
       </div>
     </div>
   )

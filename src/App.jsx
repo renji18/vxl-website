@@ -8,25 +8,24 @@ import Contact from "./components/Contact"
 import Team from "./components/Team"
 import Footer from "./components/Footer"
 import CustomCursor from "./components/Cursor"
+import "./css/slider.css"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import EffectController from "./components/EffectController"
 
 const App = () => {
-  const [contactPop, setContactPop] = useState(false)
-
   useEffect(() => {
-    const handleContextmenu = (e) => {
-      e.preventDefault()
-    }
-    document.addEventListener("contextmenu", handleContextmenu)
-    return function cleanup() {
-      document.removeEventListener("contextmenu", handleContextmenu)
-    }
+    window.history.scrollRestoration = "manual"
   }, [])
 
+  const [contactPop, setContactPop] = useState(false)
   return (
-    <div>
+    <div id="app" className="selection:bg-myPurple overflow-x-hidden">
+      <EffectController />
       <CustomCursor />
       <NavBar setContactPop={setContactPop} />
       <Home />
+      <div className="h-[70vh] md:h-[100vh] lg:h-[230vh] xl:h-[190vh] w-screen" />
       <AboutUs />
       <WhyUs />
       <Services />

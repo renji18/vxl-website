@@ -1,5 +1,3 @@
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
 import aadarsh from "../assets/whyus/aadarsh.jpeg"
 import mittal from "../assets/whyus/mittal.jpeg"
@@ -26,60 +24,62 @@ function WhyUs() {
   }
 
   return (
-    <div className="min-h-screen lg:px-20 xl:px-28 flex flex-col lg:flex-row items-center justify-center">
-      <div className="flex px-9 sm:px-20 md:px-28 lg:px-0 flex-col-reverse lg:flex-row items-center justify-center gap-10 lg:gap-12 xl:gap-24">
-        <div className="lg:w-[500px] lg:h-[420px] xl:w-[600px] items-start gap-2.5 lg:gap-12 xl:h-[500px] flex flex-col relative justify-between">
+    <div className="lg:min-h-screen flex items-center justify-center mt-0 lg:mt-0">
+      <div className="w-full max-w-[300px] md:max-w-[470px] lg:max-w-[870px] xl:max-w-[1170px]">
+        <div className="relative w-full">
+          <p className="font-bold text-4xl md:text-5xl lg:text-6xl">Why Us?</p>
           <img
             src={asterisks}
             alt=""
-            className="-top-[52px] left-[52px] md:-top-[56px] md:left-[79px] lg:-top-[55px] xl:-top-[58px] lg:left-[157px] scale-50 md:scale-75 absolute lg:scale-90 xl:scale-100 xl:left-[208px] rotate-[110deg]"
+            className="absolute left-[104px] top-[-56px] md:left-[154px] md:top-[-56px] lg:left-[204px] lg:top-[-55px] xl:left-[205px] xl:top-[-55px] rotate-[110deg]"
           />
-          <h1 className="font-bold  text-2xl md:text-3xl lg:text-5xl xl:text-6xl">
-            Why Us?
-          </h1>
-          <div className="font-light text-sm md:text-base xl:text-lg tracking-wide gap-3 lg:gap-0 flex flex-col justify-between flex-1">
+        </div>
+
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-5 xl:gap-14">
+          <div className="space-y-3 lg:w-3/5 text-sm md:text-base xl:text-xl font-light text-justify">
             <p>
               Choosing us means partnering with a team that adapts to your
               needs. Whether you require expertise in blockchain/web3 or cloud
-              backend/web2, we have the skills to deliver.
-            </p>
-            <p>
-              Our team of young, innovative minds is dedicated to bringing fresh
-              perspectives to your projects. We pride ourselves on our{" "}
+              backend/web2, we have the skills to deliver.{" "}
               <span
                 onClick={() => setReadMore(true)}
                 className={`${
                   readMore ? "hidden" : ""
-                } md:hidden bg-black  font-semibold text-base text-[#7129D6]`}
+                } lg:hidden bg-black font-semibold text-base text-[#7129D6]`}
               >
                 Read More...
-              </span>{" "}
-              <span className={`${readMore ? "" : "hidden"} md:block`}>
-                credibility, demonstrated by our active collaborations with the
-                Legal Department of Government. This partnership underscores our
-                commitment to delivering reliable and high-quality service.
               </span>
             </p>
-            <p className={`${readMore ? "" : "hidden"} md:block`}>
+            <p className={`${readMore ? "" : "hidden"} lg:block`}>
+              Our team of young, innovative minds is dedicated to bringing fresh
+              perspectives to your projects. We pride ourselves on our
+              credibility, demonstrated by our active collaborations with the
+              Legal Department of Government. This partnership underscores our
+              commitment to delivering reliable and high-quality service.
+            </p>
+            <p className={`${readMore ? "" : "hidden"} lg:block`}>
               With us, you&apos;re not just getting technical proficiency,
               you&apos;re gaining a partner who values innovation, trust, and
               your project&apos;s success. Let us help you achieve your goals
               with cutting-edge solutions tailored to your unique requirements.
             </p>
           </div>
-        </div>
-        <div className="why-us-slider-boxes w-[80vw] sm:w-[60vw] md:w-[50vw] lg:h-[350px] lg:w-[350px] xl:h-[450px] relative xl:w-[450px] lg:translate-y-5 xl:translate-y-0">
-          <Slider {...settings}>
-            {slideImg?.map((si, indx) => (
-              <div key={indx}>
-                <img
-                  src={si}
-                  alt={indx}
-                  className={`rounded opacity-100 lg:opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover why-us-slider-boxes w-[80vw] sm:w-[60vw] md:w-[50vw] lg:h-[350px] lg:w-[350px] xl:h-[450px] xl:w-[450px]`}
-                />
-              </div>
-            ))}
-          </Slider>
+          <div className="lg:w-2/5 mt-5 lg:mt-0">
+            <Slider {...settings}>
+              {slideImg?.map((si, indx) => (
+                <div key={indx}>
+                  <img
+                    style={{
+                      boxShadow: "0 0 8px 1px #7129D6",
+                    }}
+                    src={si}
+                    alt={indx}
+                    className={`border rounded-md p-1 border-myPurple mx-auto opacity-100 lg:opacity-80 hover:opacity-100 transition-all ease-linear duration-200 object-cover why-us-slider-boxes`}
+                  />
+                </div>
+              ))}
+            </Slider>
+          </div>
         </div>
       </div>
     </div>
