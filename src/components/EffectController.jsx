@@ -103,8 +103,8 @@ const EffectController = () => {
         : vw > 900 && vw < 1199
         ? calculateStyles(225, 1.5, 20, 40, 40, 1.6, 20, 1.5)
         : vw > 500 && vw < 899
-        ? calculateStyles(200, 1.5, 0, 0, 20, 1.8, 4, 1.5)
-        : calculateStyles(180, 1.5, 0, 0, 20, 4, 4, 1.5)
+        ? calculateStyles(200, 1.5, 0, 0, 20, 1.5, 4, 1.5)
+        : calculateStyles(180, 1.5, 0, 0, 20, 3.5, 4, 1.5)
     }
 
     window.addEventListener("scroll", move)

@@ -42,7 +42,7 @@ const Services = () => {
   ]
 
   return (
-    <div className="md:min-h-screen flex items-center justify-center">
+    <div className="md:min-h-screen mt-28 lg:mt-0 flex items-center justify-center">
       <div className="w-full flex flex-col lg:flex-row items-center justify-between gap-5 xl:gap-14 md:max-w-[470px] lg:max-w-[870px] xl:max-w-[1170px]">
         <div className="font-bold text-3xl md:text-4xl xl:text-5xl">
           <p className="">
