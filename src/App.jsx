@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div id="app" className="selection:bg-myPurple overflow-x-hidden">
       <EffectController />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <NavBar setContactPop={setContactPop} />
       <Home />
       <div className="h-[70vh] md:h-[100vh] lg:h-[230vh] xl:h-[190vh] w-screen" />
