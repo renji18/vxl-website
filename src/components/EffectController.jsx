@@ -13,34 +13,45 @@ const EffectController = () => {
       let value = window.scrollY
       const vw = window.innerWidth
 
+      const resetOpacity = () => {
+        videoAsset.style.opacity = ""
+        navbar.style.opacity = ""
+        about.style.opacity = ""
+      }
+
+      const applyRotation = (widthFactor, rotationFactor) => {
+        circleAsset.style.width = `${value / 10 + widthFactor}%`
+        circleAsset.style.transform = `rotate3d(1, 0, 1, ${
+          value / rotationFactor
+        }deg)`
+      }
+
+      const adjustOpacity = (opacityLimit) => {
+        homeDesc.style.opacity = 1 - value / opacityLimit
+      }
+
+      const applyVideoOpacity = (videoOpacity) => {
+        videoAsset.style.opacity = videoOpacity
+        navbar.style.opacity = 1
+        about.style.opacity = 1
+      }
+
       if (vw > 900) {
         if (value / 20 < 90) {
-          videoAsset.style.opacity = ""
-          navbar.style.opacity = ""
-          about.style.opacity = ""
-
-          circleAsset.style.width = `${value / 10 + 50}%`
-          circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 10}deg)`
+          resetOpacity()
+          applyRotation(50, 10)
         } else {
-          videoAsset.style.opacity = 0.3
-          navbar.style.opacity = 1
-          about.style.opacity = 1
+          applyVideoOpacity(0.3)
         }
-        homeDesc.style.opacity = 1 - value / 2000
+        adjustOpacity(2000)
       } else {
         if (value / 10 < 90) {
-          videoAsset.style.opacity = ""
-          navbar.style.opacity = ""
-          about.style.opacity = ""
-
-          circleAsset.style.width = `${value / 10 + 70}%`
-          circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 5}deg)`
+          resetOpacity()
+          applyRotation(70, 5)
         } else {
-          videoAsset.style.opacity = 0.3
-          navbar.style.opacity = 1
-          about.style.opacity = 1
+          applyVideoOpacity(0.3)
         }
-        homeDesc.style.opacity = 1 - value / 1000
+        adjustOpacity(1000)
       }
 
       circleAsset.style.opacity = 0.8 - value / 2500
@@ -61,25 +72,39 @@ const EffectController = () => {
       if (!homeDesc) return
       let value = window.scrollY
       const vw = window.innerWidth
+      const vh = window.innerHeight
+      const hdh = homeDesc.clientHeight
 
       homeTitle.style.scale = 1 - value / 1000
-      homeDesc.style.width = `${255 + value * 1.5}px`
 
-      homeDesc.style.bottom =
-        value < (window.innerHeight + homeDesc.clientHeight) / 1.5 &&
-        `${20 + value / 1.5}px`
-
-      if (vw > 1200) {
-        homeDesc.style.fontSize = value / 10 < 90 && `${24 + value / 30}px`
-        homeDesc.style.left = value < vw / 4 && `${40 + value}px`
-      } else if (vw > 900 && vw < 1199) {
-        homeDesc.style.fontSize = value / 10 < 90 && `${20 + value / 40}px`
-        homeDesc.style.left = value < vw / 4 && `${40 + value / 1.6}px`
-      } else if (vw > 500 && vw < 899) {
-        homeDesc.style.left = value < vw / 4 && `${40 + value / 1.8}px`
-      } else {
-        homeDesc.style.left = value < vw / 4 && `${40 + value / 4}px`
+      const calculateStyles = (
+        width,
+        widthFactor,
+        fontSizeBase,
+        fontSizeFactor,
+        leftBase,
+        leftFactor,
+        bottomBase,
+        bottomFactor
+      ) => {
+        homeDesc.style.width = `${width + value * widthFactor}px`
+        homeDesc.style.fontSize =
+          vw > 900 &&
+          value / 10 < 90 &&
+          `${fontSizeBase + value / fontSizeFactor}px`
+        homeDesc.style.left =
+          value < vw / 4 && `${leftBase + value / leftFactor}px`
+        homeDesc.style.bottom =
+          value < (vh + hdh) / 1.5 && `${bottomBase + value / bottomFactor}px`
       }
+
+      vw > 1200
+        ? calculateStyles(255, 1.5, 24, 30, 40, 1, 20, 1.5)
+        : vw > 900 && vw < 1199
+        ? calculateStyles(225, 1.5, 20, 40, 40, 1.6, 20, 1.5)
+        : vw > 500 && vw < 899
+        ? calculateStyles(200, 1.5, 0, 0, 20, 1.8, 4, 1.5)
+        : calculateStyles(180, 1.5, 0, 0, 20, 4, 4, 1.5)
     }
 
     window.addEventListener("scroll", move)

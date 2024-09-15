@@ -44,7 +44,7 @@ function Home() {
 
       <p
         id="home-desc"
-        className="fixed left-10 bottom-5 text-lg md:text-xl lg:text-2xl xl:text-2xl w-[255px] max-w-fit font-semibold tracking-wide"
+        className="fixed left-5 bottom-1 lg:left-10 lg:bottom-5 text-lg md:text-xl lg:text-2xl xl:text-2xl w-[180px] md:w-[200px] lg:w-[225px] xl:w-[255px] max-w-fit font-semibold tracking-wide"
         style={{ transform: "translate(-5%, -5%)" }}
       >
         <Typewriter
