@@ -13,26 +13,37 @@ const EffectController = () => {
       let value = window.scrollY
       const vw = window.innerWidth
 
-      if (value / 20 < 90) {
-        videoAsset.style.opacity = ""
-        navbar.style.opacity = ""
-        about.style.opacity = ""
-        circleAsset.style.opacity = 0.8 - value / 2500
-        homeDesc.style.opacity = 1 - value / 2000
-        circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 10}deg)`
+      if (vw > 900) {
+        if (value / 20 < 90) {
+          videoAsset.style.opacity = ""
+          navbar.style.opacity = ""
+          about.style.opacity = ""
 
-        if (vw > 900) {
           circleAsset.style.width = `${value / 10 + 50}%`
+          circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 10}deg)`
         } else {
-          circleAsset.style.width = `${value / 10 + 70}%`
+          videoAsset.style.opacity = 0.3
+          navbar.style.opacity = 1
+          about.style.opacity = 1
         }
-      } else {
-        circleAsset.style.opacity = 0.8 - value / 2500
         homeDesc.style.opacity = 1 - value / 2000
-        videoAsset.style.opacity = 0.3
-        navbar.style.opacity = 1
-        about.style.opacity = 1
+      } else {
+        if (value / 10 < 90) {
+          videoAsset.style.opacity = ""
+          navbar.style.opacity = ""
+          about.style.opacity = ""
+
+          circleAsset.style.width = `${value / 10 + 70}%`
+          circleAsset.style.transform = `rotate3d(1 , 0, 1, ${value / 5}deg)`
+        } else {
+          videoAsset.style.opacity = 0.3
+          navbar.style.opacity = 1
+          about.style.opacity = 1
+        }
+        homeDesc.style.opacity = 1 - value / 1000
       }
+
+      circleAsset.style.opacity = 0.8 - value / 2500
     }
 
     window.addEventListener("scroll", rotate)
@@ -62,7 +73,7 @@ const EffectController = () => {
         homeDesc.style.fontSize = value / 10 < 90 && `${24 + value / 30}px`
         homeDesc.style.left = value < vw / 4 && `${40 + value}px`
       } else if (vw > 900 && vw < 1199) {
-        homeDesc.style.fontSize = value / 10 < 90 && `${20 + value / 30}px`
+        homeDesc.style.fontSize = value / 10 < 90 && `${20 + value / 40}px`
         homeDesc.style.left = value < vw / 4 && `${40 + value / 1.6}px`
       } else if (vw > 500 && vw < 899) {
         homeDesc.style.left = value < vw / 4 && `${40 + value / 1.8}px`
