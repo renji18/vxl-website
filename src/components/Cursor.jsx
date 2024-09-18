@@ -14,7 +14,7 @@ const CustomCursor = () => {
       cursorRef.current.animate(
         {
           left: `${clientX}px`,
-          top: `${clientY}px`,
+          // top: `${clientY}px`,
         },
         { duration: 200, fill: "forwards" }
       )
