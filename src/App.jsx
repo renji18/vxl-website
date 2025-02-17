@@ -8,10 +8,11 @@ import Contact from "./components/Contact"
 import Team from "./components/Team"
 import Footer from "./components/Footer"
 import CustomCursor from "./components/Cursor"
-import "./css/slider.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import EffectController from "./components/EffectController"
+import "./css/slider.css"
+import "./css/customCard.css"
 
 const App = () => {
   useEffect(() => {

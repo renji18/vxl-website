@@ -37,15 +37,6 @@ const Team = () => {
         "Relentless problem solver, unwavering fighter. Empathetic leader prioritizing team well-being and fosters innovation through collaboration and persistence.",
     },
     {
-      name: "Darshil Mistry",
-      position: "FOUNDING MEMBER & TECH LEAD",
-      profile: darshil,
-      socials: { linkedIn: "Linkedin.com/in/idarshilmistry", github: "" },
-      portfolio: "",
-      about:
-        "Life is too short to think, just take a leap of faith. Developer by the day, gamer by the night.",
-    },
-    {
       name: "Aadarsh Jha",
       position: "FOUNDING MEMBER & TECH LEAD",
       profile: aadarsh,
@@ -89,21 +80,9 @@ const Team = () => {
         linkedIn: "https://www.linkedin.com/in/mittal-suthar/",
         github: "",
       },
-      portfolio: "",
+      portfolio: "https://mittal-suthar.vercel.app/",
       about:
         "Code artisan blending creativity with technology. Building impactful software solutions that push boundaries and inspire change.",
-    },
-    {
-      name: "Susmit Kulkarni",
-      position: "AI/ML DEVELOPER",
-      profile: susmit,
-      socials: {
-        linkedIn: "https://www.linkedin.com/in/susmit-kulkarni-5a626124b/",
-        github: "",
-      },
-      portfolio: "",
-      about:
-        "Digital magus, open-source crusader, imperial historian. Building the future, one commit at a time.",
     },
   ]
 
